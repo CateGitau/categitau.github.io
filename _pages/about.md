@@ -15,3 +15,14 @@ Currently interested in doing applied research in the following areas:
 - Natural Language Processing
   - Topic modeling
 - Recommender Systems
+
+# Talks
+Google Developer Groups Dev Fest (2017)
+Tensorflow Summit (2018)
+ACCA Power of Digital Round-table (2019)
+
+
+# Conferences
+- Deep Learning Indaba, Stellenbosch University, Sout Africa(2018)
+- UseR Conference,Toulouse France (2019)
+- Deep Learning Indaba, Nairobi Kenya (2020)
