@@ -8,7 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-# About Me
 My name is Catherine Muthoni Gitau, I am currently a Student at the [African Masters in Machine Intelligence](https://aimsammi.org/), working towards a Masters in Machine Intelligence. Previously, a Student at [Jomo Kenyatta University of Agriculture and Technology](http://www.jkuat.ac.ke/) where I pursued a Bachelors degree in Mathematics and Computer Science.
 
 # Research Interests
