@@ -22,7 +22,7 @@ Tensorflow Summit (2018)
 ACCA Power of Digital Round-table (2019)
 
 
-# Conferences
+# Conferences and Workshops
 - Deep Learning Indaba, Stellenbosch University, Sout Africa(2018)
 - UseR Conference,Toulouse France (2019)
 - Deep Learning Indaba, Nairobi Kenya (2020)
