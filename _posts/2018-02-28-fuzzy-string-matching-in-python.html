@@ -1,0 +1,109 @@
+---
+layout: post
+title: Fuzzy String Matching in Python
+date: 2018-02-28 10:17:58.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Data Science
+- Python
+tags: []
+meta:
+  _thumbnail_id: '1743'
+  _edit_last: '1'
+  _oembed_29f597a9179d7465fd59b13e39104492: <a href="https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/">Fuzzy
+    String Matching in&nbsp;Python</a>
+  _oembed_time_29f597a9179d7465fd59b13e39104492: '1521050679'
+  _oembed_962b91b00e0eca1fc4e684196931ecbb: "{{unknown}}"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1583472085;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:38;}i:1;a:1:{s:2:"id";i:668;}i:2;a:1:{s:2:"id";i:1602;}}}}
+  _syntaxhighlighter_encoded: '1'
+  _wpas_done_all: '1'
+  _linkedin_shares: '0'
+  _pinterest_shares: '0'
+  _twitter_shares: '0'
+  _totes: '0'
+  swp_pinterest_image_url: ''
+  swp_cache_timestamp: '431882'
+  _facebook_shares: '0'
+  _oembed_2e26a10348c77a0c3ac5076d1de2a19f: <a href="https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/">Fuzzy
+    String Matching in&nbsp;Python</a>
+  _total_shares: '0'
+  _google_plus_shares: '0'
+  _oembed_f49685d4973bb5cc242c341338f4b644: <a href="https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/">Fuzzy
+    String Matching in&nbsp;Python</a>
+  _oembed_time_f49685d4973bb5cc242c341338f4b644: '1583507227'
+  _oembed_time_2e26a10348c77a0c3ac5076d1de2a19f: '1554778092'
+  _oembed_dd690d1c053de1648e0b652b6e11baca: <a href="https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/">Fuzzy
+    String Matching in&nbsp;Python</a>
+  _oembed_time_dd690d1c053de1648e0b652b6e11baca: '1554794278'
+  _oembed_c9bdcaff11b19d7473e8da16b49feba8: <a href="https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/">Fuzzy
+    String Matching in&nbsp;Python</a>
+  _oembed_time_c9bdcaff11b19d7473e8da16b49feba8: '1560067031'
+author:
+  login: categitau
+  email: catherinegitau94@gmail.com
+  display_name: categitau
+  first_name: ''
+  last_name: ''
+permalink: "/fuzzy-string-matching-in-python/"
+---
+<p>As a data scientist, you are forced to retrieve information from various sources by either leveraging publicly available API's, asking for data, or by simply scraping your own data from a web page. All this information is useful if we are able to combine it and not have any duplicates in the data. But how do we make sure that there are no duplicates?</p>
+<p><!--more--></p>
+<p>I know ... <em>"duh! you can just use a function that retrieves all the unique </em><em>information thus removing duplicates"</em>. Well, that's one way, but our function probably can't tell that a name like<em> "Barack Obama"</em> is the same as<em> "Barack H. Obama" </em>right? (Assuming we were retrieving names of the most famous people in the world). We can clearly tell that these names are different but they are probably referring to the same person. So, how do we match these names?</p>
+<p>This is where Fuzzy String Matching comes in. This post will explain what Fuzzy String Matching is together with its use cases and give examples using Python's Library <a href="https://pypi.python.org/pypi/fuzzywuzzy"><em>Fuzzywuzzy</em></a>.</p>
+<h4><b>Fuzzy Logic</b></h4>
+<blockquote><p><strong>Fuzzy(<em>adjective</em>)</strong>: difficult to perceive; indistinct or vague</p>
+<p>-Wikipedia</p></blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Fuzzy_logic" target="_blank" rel="noopener">Fuzzy logic</a> is a form of multi-valued logic that deals with reasoning that is approximate rather than fixed and exact. Fuzzy logic values range between 1 and 0. i.e the value may range from completely true to completely false. In contrast, <em><strong>Boolean Logic</strong></em> is a two-valued logic: true or false usually denoted 1 and 0 respectively, that deals with reasoning that is fixed and exact. Fuzzy logic tends to reflect how people think and attempts to model our decision making hence it is now leading to new intelligent systems(expert systems).</p>
+<p>So, if we are comparing two strings using fuzzy logic, we would be trying to answer the question <em>"How similar are string A and string B?", </em>and rephrasing it as <em>"Are string A and String B the same?"</em> when using the Boolean Logic.</p>
+<h4><strong>Fuzzy String Matching</strong></h4>
+<p><a href="https://en.wikipedia.org/wiki/Approximate_string_matching" target="_blank" rel="noopener">Fuzzy String Matching</a>, also known as Approximate String Matching, is the process of finding strings that approximately match a pattern. The process has various applications such as <em>spell-checking</em>, <em>DNA analysis and detection,</em> spam detection, <em>plagiarism detection e.t.c</em></p>
+<h5>Introduction to <em>Fuzzywuzzy</em> in Python</h5>
+<p><strong>Fuzzywuzzy</strong> is a python library that uses <strong>Levenshtein Distance</strong> to calculate the differences between sequences and patterns that was developed and also open-sourced by <a href="https://seatgeek.com/" target="_blank" rel="noopener">SeatGeek,</a> a service that finds events from all over the internet and showcase them on one platform. The big problem they were facing was the labeling of the same events as stated on their <a href="http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/" target="_blank" rel="noopener">blog</a>. This is the same as the example I gave at the beginning of the post where an entity such as a person's name can be labelled differently on different sources.</p>
+<h5>Installation</h5>
+<p>To install the library, you can use pip:</p>
+<p>[sourcecode language="python"]</p>
+<p>pip install fuzzywuzzy</p>
+<p>pip install python-Levenshtein</p>
+<p>[/sourcecode]</p>
+<h5>Examples</h5>
+<p>First we have to import the fuzzywuzzy modules:</p>
+<p>[sourcecode language="python"]</p>
+<p>from fuzzywuzzy import fuzz<br />
+from fuzzywuzzy import process</p>
+<p>[/sourcecode]</p>
+<p>Now, we can get the similarity score of two strings by using the following methods; ratio() or partial_ratio():</p>
+<p>[sourcecode language="python"]</p>
+<p>fuzz.ratio(&quot;Catherine M Gitau&quot;,&quot;Catherine Gitau&quot;)</p>
+<p>#91</p>
+<p>fuzz.partial_ratio(&quot;Catherine M. Gitau&quot;,&quot;Catherine Gitau&quot;)</p>
+<p>#100</p>
+<p>[/sourcecode]</p>
+<p>You're probably wondering why the scores are different. This is because the fuzz.ratio() method just calculates the edit distance between some ordering of the token in both input strings using the <code>difflib.ratio.</code> You can find out more about the difflib.ratio <a href="https://docs.python.org/2/library/difflib.html#difflib.SequenceMatcher.ratio" target="_blank" rel="noopener">here</a>. The<strong> <em>fuzz.partial_ratio()</em></strong> takes in the shortest string, which in this case is "Catherine Gitau" (length 14) , then matches it with all the sub-strings of length(14) in "Catherine M. Gitau" which means matching with "Catherine Gitau" which gives 100%. You can play around with the strings until you get the gist.</p>
+<p>What if we switched up two names in one string? In the following example, I've interchanged the name "Catherine Gitau" to "Gitau Catherine" .Let's see the scores:</p>
+<p>[sourcecode language="python"]</p>
+<p>fuzz.ratio(&quot;Catherine M Gitau&quot;,&quot;Gitau Catherine&quot;)</p>
+<p>#55</p>
+<p>fuzz.partial_ratio(&quot;Catherine M. Gitau&quot;,&quot;Gitau Catherine&quot;)</p>
+<p>#60</p>
+<p>[/sourcecode]</p>
+<p>We see that both methods are giving out low scores, this can be rectified by using <strong><em>token_sort_ratio()</em></strong> method. This method attempts to account for similar strings that are out of order. Example, if we used the above strings:</p>
+<p>[sourcecode language="python"]</p>
+<p>fuzz.token_sort_ratio(&quot;Catherine Gitau M.&quot;, &quot;Gitau Catherine&quot;)</p>
+<p>#94</p>
+<p>[/sourcecode]</p>
+<p>As you can see, we get a high score of 94.</p>
+<h4><strong>Conclusion</strong></h4>
+<p>This article has introduced Fuzzy String Matching which is a well known problem that is built on Leivenshtein Distance. From what we have seen, it calculates how similar two strings are. This can also be calculated by finding out the number of operations needed to transform one string to the other .e.g with the name "Barack", one might spell it as "Barac". Only one operation is needed to correct this i.e adding a K at the end. You can try this out using the <em>stringdist</em> library in <strong>r</strong> as such:</p>
+<p>[sourcecode langauge="r"]</p>
+<p>adist(&quot;Barack&quot;, &quot;Barac&quot;)<br />
+#[1]</p>
+<p>[/sourcecode]</p>
+<h4><strong>Sources</strong></h4>
+<p>https://marcobonzanini.com/2015/02/25/fuzzy-string-matching-in-python/</p>
+<p>&nbsp;</p>
+<p>Till next time:)</p>
+<p>&nbsp;</p>

@@ -1,0 +1,171 @@
+---
+layout: post
+title: Deep dive into Supervised Learning
+date: 2020-01-13 19:18:41.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags:
+- data science
+- machine learning
+- supervised learning
+meta:
+  _thumbnail_id: '2446'
+  _wpas_done_all: '1'
+  spay_email: ''
+  _wpas_mess: 'I''ve just published "Deep dive into Supervised Learning". Feedback
+    is highly welcome :) #machinelearning #python #datascience'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1583716846;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1851;}i:1;a:1:{s:2:"id";i:1774;}i:2;a:1:{s:2:"id";i:2385;}}}}
+  _publicize_twitter_user: "@categitau_"
+  _edit_last: '1'
+  force_ssl: '1'
+  force_ssl_children: '1'
+  _encloseme: '1'
+  _pingme: '1'
+author:
+  login: categitau
+  email: catherinegitau94@gmail.com
+  display_name: categitau
+  first_name: ''
+  last_name: ''
+permalink: "/deep-dive-into-supervised-learning/"
+---
+<p><!-- wp:paragraph --></p>
+<p>This is part 2 of my foundations of machine learning series. You can find the other articles listed below:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><a href="https://categitau.com/foundations-of-machine-learning-part-1/">Part1 - Introduction to Machine Learning</a></li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2>Machine Learning Process</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Anyone interested in the field of machine learning already has an overview of how the whole process looks like which usually involves:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><strong>Data collection </strong> - Collecting data that's going to be used to train the model.</li>
+<li><strong>Data pre-processing</strong> - Data cleaning and validation, dealing with missing data, formatting and placing the data into the optimal format and extracting new features in the data.</li>
+<li><strong>Exploratory analysis</strong> - Understanding how the data looks like and if there are any interesting patterns within.</li>
+<li><strong>Training of the model</strong> - Learning takes place</li>
+<li><strong>Evaluation of the model</strong> - Testing the models performance.</li>
+<li><strong>Tuning </strong>- Fine tuning the model to maximize its performance.</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>I will not go over the data collection, pre-processing and exploratory analysis stages. We will assume we already have the data and it's cleaned and already preprocessed. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>In this article we're going to get a little deeper into supervised learning and try to understand how models actually learn and how we end up building a good model in the end. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>Supervised Learning</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>In my previous post, I talked about supervised learning being the process of learning that consists of the output feature/dependent variable which is to be predicted from a given set of input features/independent variables.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Suppose that I have data about houses which has the attributes: size in square feet and price as shown in the table below:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":2472,"sizeSlug":"large"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/blog_dia2.png" alt="" class="wp-image-2472" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Each row [latex]{(i)}[/latex], represents a house. So, given the data above, we can build a program that learns to predict the price of other houses based on its size. The question now is, how? We will denote the size as our input variable <strong>x </strong>and the price as our output variable <strong>y</strong>. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>[latex]{x^{(i)}}[/latex]</strong> and our output or target variable<strong> [latex]{y^{(i)}}[/latex]</strong>  are known as the <strong>training samples </strong>and the goal is to train a computer using these training samples so that it can learn some function <strong>[latex]{h}[/latex]</strong> that best maps an input <strong>[latex]{x^{(i)}}[/latex]</strong>  to the output <strong>[latex]{y^{(i)}}[/latex] </strong>such that, given a new set of inputs, the function is able to correctly predict the output. This function <strong>[latex]{h}[/latex]</strong> is called the <strong>hypothesis</strong> which is a rule that we come up with to help us predict the price of a house given its features. This hypothesis is usually unknown. The superscript [latex]{(i)}[/latex] here denotes each training sample/row or in this case each house with its attributes.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Most of the time, we come up with the hypothesis by making an assumption about the data which is mostly done when we're exploring our data. If we draw out the relationship between the size of the house and price using the data that we have we end up with the graph below:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":2471,"sizeSlug":"large"} --></p>
+<figure class="wp-block-image size-large"><img src="{{ site.baseurl }}/assets/blog_dia1.png" alt="" class="wp-image-2471" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>From the graph above, we can assume that our data flows in a linear form i.e as the size of the house increases the price also tends to increase and decide to use the <strong>linear regression algorithm </strong>as our hypothesis. These algorithms that make an assumption about how the data flows are known as<strong> parametric algorithms</strong>. <strong>Non-parametric</strong> algorithms are said to have no assumptions about the underlying data.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Examples of parametric machine learning algorithms include:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Linear Regression</li>
+<li>Logistic Regression</li>
+<li>Perceptron</li>
+<li>Naive Bayes</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>Examples of non-parametric machine learning algorithms include:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>k-Nearest Neighbors</li>
+<li>Decision trees</li>
+<li>Support Vector Machines</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>Back to our example, we have approximated the output <strong>y</strong> (price) as a linear function of <strong>x</strong>(size) such that: <strong>[latex]  h_\theta(x) = \theta_0 + \theta_1x_1 [/latex] </strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>[latex] h_\theta(x)[/latex] </strong>is our predicted <strong>y </strong>and <strong>[latex] \theta[/latex]</strong> are the model parameters.  This is similar to the linear function that takes the form y=mx + c. The model parameters are learned during the training phase.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Identifying the <strong>hypothesis </strong>is usually the first step in building a model. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Next, we need to come up with a <strong>criteria </strong>which is also known as the <strong>cost/loss function </strong>which ideally tells us how well our model is performing. In this case, how well our model is able to approximate the true price of the house. This loss function is calculated by getting the difference between the true value of [latex] y^{(i)}[/latex] and the predicted value of [latex] y^{(i)}[/latex]. So, if the predictions deviate too much from actual results, the loss function will give a large value. There are different kinds of loss functions used depending on your problem which we will cover as we go through the various algorithms in the coming blog posts.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The next step is the training phase where we use an optimization algorithm known as the <strong>learning algorithm. </strong>This learning algorithm is used to help find the value of the parameters [latex] \theta [/latex] of the function <strong>[latex]{h}[/latex]</strong> that minimize the criteria or loss function. This is where the learning takes place. The most popular optimization algorithm used is <strong>gradient descent</strong>. There's another set of parameters known as the <strong>hyperparameters. </strong>These are values that are specified by the user before starting training. This happens during the tuning phase to improve the performance of the model.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The diagram below shows the overview of the whole process:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2453,"sizeSlug":"large"} --></p>
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img src="{{ site.baseurl }}/assets/blog-1.png" alt="" class="wp-image-2453" /><br />
+<figcaption>Source:http://cs229.stanford.edu/notes/cs229-notes1.pdf</figcaption>
+</figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>In the example I have given above, we are trying to predict a continuous variable price. We call this a <strong>regression </strong>problem. If we were predicting a small number of discrete values such as type of house, we call this a <strong>classification </strong>problem.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Building a good machine learning model is an iterative process and our main goal is to build a model that generalizes well on the unseen data. i.e how well the the model performs to new data that it has not seen. Generalization allows the model to make good predictions on data that it has not seen before. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>When we talk about generalization, we often mention the two main causes of poor model performance which is <strong>overfitting </strong>and <strong>underfitting. </strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Overfitting </strong>refers to a model that has learnt the training data a bit too well and performs poorly on unseen data. I like using the example of a student that 'accidentally' comes across answers to an upcoming exam. This student then ends up memorizing the answers but unfortunately, the exam gets changed last minute. It's obvious that the said student will not perform well, since he had not studied the whole topic(didn't generalize) but rather decided to cram answers to a different exam. Same thing that happens when your model overfits. Models also tend to overfit when the complexity of the model is too high compared to the data that it's trying to learn from.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Underfitting</strong> refers to a model that does not perform well on the training data as well as generalize on new data. This often happens when the model is too simple to learn the data that it is given as input.  The model is said to underfit when the complexity of the model is too less for it to learn the data that it's been given. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>There are various methods that can be used to prevent your model from overfitting or underfitting which I will talk about in more detail in another post. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>So far we have looked at the overall process of modeling, training and evaluating your model. In the upcoming posts, we will get our hands dirty with some of the popular algorithms used in machine learning and code them from scratch to understand exactly what happens behind the scenes, following the same exact steps we've discussed above.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Feel like I've missed a step? Kindly share in the comments bellow. Till next time :) </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>References</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p><a href="http://cs229.stanford.edu/notes/cs229-notes1.pdf">Stanford CS229 Supervised Learning Lecture Notes</a>. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><a href="https://chemicalstatistician.wordpress.com/2014/01/14/machine-learning-lesson-of-the-day-parametric-vs-non-parametric-models/">Parametric vs Non-Parametric algorithms</a></p>
+<p><!-- /wp:paragraph --></p>

@@ -1,0 +1,130 @@
+---
+layout: post
+title: Credit Score Model
+date: 2017-07-18 13:02:34.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Data Science
+- Projects
+tags: []
+meta:
+  _thumbnail_id: '457'
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '7215904615'
+  _edit_last: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1583569062;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:1787;}i:1;a:1:{s:2:"id";i:1774;}i:2;a:1:{s:2:"id";i:2385;}}}}
+  swp_pinterest_image_url: ''
+  swp_cache_timestamp: '431868'
+  _facebook_shares: '0'
+  _totes: '0'
+  _linkedin_shares: '0'
+  _twitter_shares: '0'
+  _pinterest_shares: '0'
+  _google_plus_shares: '0'
+  _total_shares: '0'
+author:
+  login: categitau
+  email: catherinegitau94@gmail.com
+  display_name: categitau
+  first_name: ''
+  last_name: ''
+permalink: "/credit-score-modelintroduction/"
+---
+<p>Like I promised, here’s a project I was working on about a month ago.<!--more--></p>
+<p>A <strong>credit score model</strong> is defined as</p>
+<blockquote><p>“a mathematical model which attempts to provide a quantitative estimate of the probability that a customer will display a defined behavior (e.g. Loan default, bankruptcy or a lower level of delinquency) with respect to their current or proposed credit position with a lender.”</p></blockquote>
+<p>In other words, a credit score assesses an entities ability to pay its financial obligations. They are also predictive when used with advanced tools that evaluate the likelihood of one to pay or default a loan based on some entities.<br />
+Usually, the parties that assess the credit worthiness of an entity e.g. Financial Institutions, Banks etc. use their own methodology to measure the credit worthiness and use their own rating scale.</p>
+<p>An example of an Interesting company that determines whether you're likely to repay a loan is <strong><em>Zestfinance. </em></strong>The unique thing about Zestfinance, is the fact that it doesn't necessarily need your financial history when determining whether you're likely to repay a loan or not . It instead uses Machine learning to determine based on many data sources, whether you're eligible. Among the many factors they look at is whether you type your name with proper capitalization or in all caps. According to founder and chief executive of ZestFinance Douglas Merrill,  <em>"If you fill in your name in all caps, you're a much higher risk"</em>. Interesting right? or a bit absurd? I don't know.</p>
+<p>So credit scoring isn't the only way one can determine the credit worthiness of a person.</p>
+<p>There are also a couple of FinTech companies in Kenya that use the credit scoring method to provide loans to people. These are : <strong>Pezesha</strong>, <strong>Tala</strong>, <strong>Branch</strong>, <strong>Umati capital</strong> just to mention a few.</p>
+<p>Honestly, I had no idea what this was until a few months ago when I participated in the <strong>DATAHACK4FI</strong>  challenge that was being hosted by Brave Venture labs, Kenya. This was a competition that was aimed to develop Innovative data-driven digital solutions to advance access to financial services for low-income earners in Kenya.</p>
+<p>I was approached to be part of a team whose idea was about hacking the problem of getting some working capital for small business owners using a credit score model to determine their credit worthiness and providing loans to small business owners. To my surprise, we came in third!</p>
+<p>After the competition I got the chance to play around with MPESA Statements and eventually came up with a simple credit score model. The following diagram shows the steps I took to come up with the model.</p>
+<p><img class="alignnone size-full wp-image-657" src="{{ site.baseurl }}/assets/capture22.png" alt="Capture22" width="588" height="425" /></p>
+<ul>
+<li><span style="text-decoration: underline;"><strong><em>Loading the data</em></strong></span></li>
+</ul>
+<p>[code language="python"]</p>
+<p>import pandas as pd</p>
+<p>df=pd.read_csv("home/creditscore_model/data.csv")</p>
+<p>[/code]</p>
+<p>The code above should load the data.csv file in a DataFrame 'df'.</p>
+<p>You can get an article on Analytics Vidhya that talks about how to read various file formats in Data Science(Using Python) <a href="https://www.analyticsvidhya.com/blog/2017/03/read-commonly-used-formats-using-python/" target="_blank" rel="noopener">here</a>.</p>
+<ul>
+<li><span style="text-decoration: underline;"><em><strong>Merge</strong></em></span></li>
+</ul>
+<p>[code language="python"]</p>
+<p>import pandas as pd</p>
+<p>df1 = pd.DataFrame({'A': ['A0', 'A1', 'A2', 'A3'],<br />
+'B': ['B0', 'B1', 'B2', 'B3'],<br />
+'C': ['C0', 'C1', 'C2', 'C3'],<br />
+'D': ['D0', 'D1', 'D2', 'D3']})</p>
+<p>df2 = pd.DataFrame({'A': ['A4', 'A5', 'A6', 'A7'],<br />
+'B': ['B4', 'B5', 'B6', 'B7'],<br />
+'C': ['C4', 'C5', 'C6', 'C7'],<br />
+'D': ['D4', 'D5', 'D6', 'D7']})</p>
+<p>df3 = pd.DataFrame({'A': ['A8', 'A9', 'A10', 'A11'],<br />
+'B': ['B8', 'B9', 'B10', 'B11'],<br />
+'C': ['C8', 'C9', 'C10', 'C11'],<br />
+'D': ['D8', 'D9', 'D10', 'D11']})</p>
+<p>frames = [df1, df2, df3]<br />
+result = pd.concat(frames,keys=['M1','M2','M3'])</p>
+<p>[/code]</p>
+<p>The above code merges the DataFrames df1, df2, and df3. This is how I merged the 50 Individual Financial statements that I used for my model. You can get more info on merging and sorting and concatenate <a href="http://pandas.pydata.org/pandas-docs/stable/merging.html">Here</a>.</p>
+<ul>
+<li><em><strong>Data Janitoring and Exploration</strong></em></li>
+</ul>
+<p>This is just my fancy way of calling data cleaning. There are various ways of ensuring that your data is clean and consistent. In my case, given 50 Financial statements I had to:</p>
+<ol>
+<li>Ensure the values in the data are of a certain type. For example the Date and time.</li>
+<li>Ensure that there are no missing values in the required fields such as someones National ID, since without it you're not able to determine or identify the person and also transaction types.</li>
+<li>Ensure that certain unique values are not repeated such as the National IDs.</li>
+<li>Ensure that the data has no errors.</li>
+</ol>
+<p>Did you know that most data scientists take about 70% of their project time exploring, cleaning and preparing data? If you didn't, now you know. Data exploration plays a big role in data analysis. No one can build the best predictive models without exploring their data first. A lot of work is done during this step.</p>
+<ul>
+<li><span style="text-decoration: underline;"><strong><em>Feature Engineering</em></strong></span></li>
+</ul>
+<p>Feature Engineering is the science of extracting more information from the existing data. No data is being added or being removed, but rather you are trying to make the data you have more useful. Feature engineering is usually done after the data has been explored. You can find more information about it <a href="https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/#four">here</a></p>
+<p>In this case having the financial statements with the Variables : <strong>Transaction Time, Transaction Type, Transactee, Sent Amount, Received Amount</strong>. What more information can we get from this data?</p>
+<p>For example, we could try and get the average amount each individual earned that year:</p>
+<p>[code language="python"]</p>
+<p>#Import libraries</p>
+<p>import numpy as np</p>
+<p>import pandas as pd</p>
+<p>import matplotlib as plt</p>
+<p>#load in the dataset</p>
+<p>df = pd.read_csv(" ")</p>
+<p>#drop the unnecessary columns</p>
+<p>df = df.drop("['TransactionId','SentAmount','transactee']")</p>
+<p>#view data</p>
+<p>df.head()</p>
+<p>#remove all the rows in column Receipt that have NaNs</p>
+<p>receipt = df.dropna(axis=0, how='any')</p>
+<p>#to view the mean</p>
+<p>receipt.describe()</p>
+<p>[/code]</p>
+<p>We could also get some more features such as the months, to find out which months most MPESA transactions done.</p>
+<ul>
+<li><span style="text-decoration: underline;"><em><strong>Criteria and Weightages</strong></em></span></li>
+</ul>
+<p>To build the model, you need to come up with various criteria that will determine whether the person is worth getting a loan or not. In this case, I came up with 5 and gave each of them weights that total up to 100% as shown in the diagram below:</p>
+<p><img class="alignnone size-full wp-image-654" src="{{ site.baseurl }}/assets/criteria.png" alt="Criteria" width="603" height="423" /></p>
+<p><em><strong>The Methodology used:</strong></em></p>
+<ol>
+<li><strong>Credit History( Taken Credit or Not) -</strong> Those who had taken credit before got a score of <strong>100</strong> and those that had not got a <strong>0. </strong>So, If an individual had taken a loan, from the diagram above we see that the weight given is 35% so we multiply this value with 100. So, they get a score of 35 in this criteria.</li>
+<li><strong>Average Monthly Receipts</strong> <strong>-</strong> Those who have an average monthly income of  &lt;1,000Ksh I gave them a score of <strong>0</strong>, 1K-4K got a score of <strong>10</strong>, 5k-7k got <strong>20</strong> and so on and those greater than 60,000Ksh got <strong>100</strong>. e.g. If there's an individual with an average income of lets say 6,000Ksh, we'd take the weight of 30% multiply it with 20, so their final score here will be 6.</li>
+<li><strong>Loan Amount not paid back</strong> <strong>-</strong> In this case, those that had more loan debt were a higher risk than those that had less loan debt to pay. So, those with &lt;500Ksh in debt got a score of <strong>100</strong>, those with 500-100 got <strong>90</strong> , those with greater than 10,000 got a <strong>0</strong>. Multiply these scores with the weights and you'll get the final scores.</li>
+<li><strong>No. of times a loan is taken</strong> <strong>-</strong> I assumed that those who've borrowed more times are at a lower risk than those who had borrowed less. So, those who borrowed once got a <strong>0</strong>, those who borrowed 1-4 times got a score of <strong>20</strong>, those above 20 times got <strong>100</strong>.</li>
+<li><strong>No. of Organizations a loan is taken -</strong> In this case I assumed that those who borrowed from many organizations might be experiencing financial stress, hence high risk. So those that borrowed from more than 3 organizations got a score of <strong>25</strong>, those who borrowed from 1 got <strong>100.</strong></li>
+</ol>
+<p>After calculating their total scores and adding them, I visualized the results and we can now see the people who are of more risk and others of less risk. The ones with high scores are more credit worthy than those with less scores.</p>
+<p><img class="alignnone size-full wp-image-656" src="{{ site.baseurl }}/assets/score.png" alt="score" width="988" height="557" /></p>
+<p><span style="text-decoration: underline;"><strong>The End</strong></span></p>
+<p>&nbsp;</p>

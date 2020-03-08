@@ -1,0 +1,95 @@
+---
+layout: post
+title: A Basic Introduction to Cohort Analysis in R
+date: 2018-05-29 22:23:33.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  _oembed_e4c915c44c853df86d198dc745fe22a4: "{{unknown}}"
+  _publicize_twitter_user: "@realcategitau"
+  _oembed_71f142289e8d94d3f23d6cf7f5accf42: "{{unknown}}"
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1583699283;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:668;}i:1;a:1:{s:2:"id";i:1835;}i:2;a:1:{s:2:"id";i:1787;}}}}
+  _wpas_done_all: '1'
+  _wpas_mess: A Basic Introduction to Cohort Analysis in R
+  _wpas_skip_18590462: '1'
+  _wpas_skip_18590466: '1'
+  _thumbnail_id: '1887'
+  _totes: '0'
+  swp_pinterest_image_url: ''
+  swp_cache_timestamp: '431875'
+  _facebook_shares: '0'
+  _pinterest_shares: '0'
+  _twitter_shares: '0'
+  _linkedin_shares: '0'
+  _google_plus_shares: '0'
+  _total_shares: '0'
+  _oembed_190af93164c42903a168b1517ed785e0: "{{unknown}}"
+  _oembed_0f656d6cbd0687d6b6a80c3b6537151b: "{{unknown}}"
+author:
+  login: categitau
+  email: catherinegitau94@gmail.com
+  display_name: categitau
+  first_name: ''
+  last_name: ''
+permalink: "/introduction-to-cohort-analysis-in-r/"
+---
+<p>"<em>Just like a doctor has to stay up to date with the latest medical developments, learning never stops for a data scientist. Technology is evolving pretty quickly, so as this field; If you are not passionate about the field and do not enjoy learning, then data science is not for you</em>." <!--more--></p>
+<p>Since Last week, I have been reading on a topic called<strong> Cohort Analysis </strong>which I admit, was totally new to me then. Coincidentally, during this time I was also binge watching a TV series known as <a href="https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)">Silicon Valley</a>.<strong> NB: Spoiler Alert! </strong>In Ssn3 Ep09, a Startup called <strong>Pied Piper</strong> was celebrating its 500,000th app install. Exciting? Imagine your application having those many installs.</p>
+<p>[caption id="attachment_1884" align="aligncenter" width="480"]<img class="wp-image-1884 size-full" src="{{ site.baseurl }}/assets/giphy.gif" alt="" width="480" height="268" /> How most companies celebrate when they see the number of sign-ups into their platform[/caption]</p>
+<p>But, is number of installs really a good metric? I don't think so. While it is useful for a company to know how many people have downloaded their application or are on their site, that metric is quite useless on its own. While Pied Piper was hitting the 500,000th install mark, the actual number of active users of the app, as they came to find out later was actually 19,000! Yup! Instead on focusing on the daily active users of the application, Pied Piper was focusing on the number of installs of their product which really doesn't say anything about their product. That kind of metric is known as a vanity metric, which is basically a measure that doesn't matter. With 19,000 active users, clearly there's something they were doing wrong. By using Cohort Analysis, the startup could've figured out the problem way earlier. You can have a look at this <a href="https://amplitude.com/blog/2016/06/23/pied-piper-boost-retention">article</a> to find out what Pied Piper could've done to improve their retention rate.</p>
+<p>In this post we'll look at cohort analysis together with its importance in any business and company. We'll also look at how to perform cohort analysis using R and the famous plot library <a href="http://ggplot2.tidyverse.org/">ggplot 2</a>!</p>
+<h3>What is Cohort Analysis?</h3>
+<p><a href="https://en.wikipedia.org/wiki/Cohort_analysis">Cohort Analysis</a> is the study of how a certain group of people (cohorts) that share common characteristics or experiences behave within a defined time span. These groups of people also known as <strong>cohorts</strong> are usually divided depending on when they initially subscribed to the business or company's service. An example would be a group of users who joined on a particular day or month. This allows companies to see patterns in their data clearly across the life-cycle of a customer as well as explaining customer behavior changes across time by factoring in the date in which the customer was first acquired. There are many other characteristics one can consider besides the user start date such as: <em>Defining Cohorts based on the sources of registration, be it using Search, Email, Social Network, by campaigns, by the platform or device your users use etc.</em></p>
+<p>In this post, we'll focus on grouping cohorts based on their start date.</p>
+<p>This helps to answer questions like;</p>
+<ul>
+<li>Do users who signed up a year ago use your products the same way/differently than those who signed up last month?</li>
+<li>Are the old users bringing in more revenue or are the new ones?</li>
+<li>What is the retention rate of our customers?</li>
+<li>Is the rate at which we are losing customers getting better or worse?</li>
+<li>What % of the revenue came from new vs. repeat customers?</li>
+<li>Where do we lose customers?</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Applications of Cohort Analysis</h3>
+<ul>
+<li>E-Commerce - The firm may be interested in finding out the percentage of customers that signed up in the last two weeks and made a purchase.</li>
+<li>Software developers - May be interested in finding out the number of users that sign up to their platform after a certain upgrade of their application or when a new feature has been added to the platform. This will help them gauge if it was a right move or the wrong one.</li>
+<li>Gaming - A gaming industry might be losing revenue but at the same time still be having lots of users signing up. After deep analysis they might find out that the expert gamers who have been using their platform the most(cohort1) bring in more income than the new users coming in, hence will start focusing on making sure the lag time is low and also add more advanced features to the game.</li>
+<li>Marketing - By the use of cohort analysis, marketers are able to see if their marketing efforts at a certain period made any difference. They could also examine individual cohorts to gauge responses to short-term marketing efforts like email campaigns.</li>
+<li>Companies can also see how the behavior and the performance of Individual groups of users change day to day, week to week, relative to when they acquired those users.</li>
+<li>It allows the ability of a company to drill down to the users of each cohort to gain a better understanding of their behavior such as: How many users stopped using their service and how much revenue did they bring in.</li>
+</ul>
+<h3></h3>
+<h3>Metrics used in Cohort Analysis</h3>
+<p><strong>Monthly Active Users (MAU)</strong></p>
+<p>This is a Key Performance Indicator often used by online games, mobile applications and social networking sites. It is calculated by counting the number of unique users for a 30-day period. For some companies, a user is said to be active by logging in a platform and interacting with the platform, from liking posts, posting something, commenting etc. This metric helps in determining the value of a company and find the number of users who use their platforms and return to the site on a monthly basis. Aside from monthly basis, active users can also be measured daily (daily active user) and weekly (Weekly active user).</p>
+<p><strong>Monthly Recurring Revenue (MRR)</strong></p>
+<p>This is income that a business can count on receiving every single month. This is one of the most meaningful metrics a Software as a Service (Saas) business can measure. MRR not only tells you how much your customers are paying you for subscriptions every month, but also reveals if whether your business growth is sustainable.</p>
+<p><strong>Cost of Acquisition (CAC)</strong></p>
+<p>This is simply the cost of acquiring a new user. Might be through marketing, advertising, holding an event, etc. This is calculated by taking the total marketing cost divided by the number of newly acquired users. For example; if your company spends $100 on marketing and it manages to acquire 10 new users then each user has a CAC of 10. If this new user is not expected to contribute at least $10 during his lifetime as a user, then the effort doesn't make any sense.</p>
+<p><strong>Customer Lifetime Value (LTV)</strong></p>
+<p>This is the value you gain from a user throughout their lifetime. This value has to exceed the cost of acquiring a new user (CAC), otherwise the business may never be profitable. This is calculated up to different periods; could be 12 months(what you make from this client in 12 months), 36 months, etc. LTV = number of orders a customer is expected to make over their lifetime as a user(in recurrence) and multiply it by the company's average contribution margin per order.</p>
+<p>You can find more on these metrics in a blog written by a VC fund company known as Samaipata Ventures<a href="https://medium.com/samaipata-ventures/samaipatas-3-step-5-cohort-analysis-b75f534464fa"> here</a>.</p>
+<p>&nbsp;</p>
+<h3>Performing Cohort Analysis in R</h3>
+<p>Let's assume that we are running an E-Commerce business and we'd like to analyze user retention together with finding out how our users are spending money over time. Here are the stages one should take while performing such an analysis:</p>
+<ol>
+<li>Determine the business question that you'd like to answer.</li>
+<li>Define metrics that will be able to help you answer the questions you came up with during step1.</li>
+<li>Define the cohorts that are relevant and of interest.</li>
+<li>Data sourcing, cleaning and exploration.</li>
+<li>Create the cohorts and extract data according to cohorts.</li>
+<li>Calculate measures.</li>
+<li>Analyze results and adjust the parameters.</li>
+<li>Present and explain the results.</li>
+</ol>
+<p>Ready to get your hands dirty with some code? Click on the image below, which should take you to my Rnotebook where you will learn how to perform cohort analysis using R. There's still room for improving the code, let me know if you have any suggestions.</p>
+<p><a href="https://nbviewer.jupyter.org/github/CateGitau/cohort_analysis_R/blob/4571d30a2b57f9759d3e76403176568ae0d9ee50/Cohort_analysis.ipynb"><img class="aligncenter wp-image-1887 size-large" src="{{ site.baseurl }}/assets/patrick-tomasso-208114-unsplash-700x338.png" alt="https://nbviewer.jupyter.org/github/CateGitau/cohort_analysis_R/blob/master/Cohort_analysis.ipynb" width="676" height="326" /></a></p>
+<p>&nbsp;</p>

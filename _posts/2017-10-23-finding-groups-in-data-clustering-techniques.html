@@ -1,0 +1,98 @@
+---
+layout: post
+title: 'Finding groups in data : Clustering techniques'
+date: 2017-10-23 17:07:28.000000000 +00:00
+type: post
+parent_id: '0'
+published: true
+password: ''
+status: publish
+categories:
+- Data Science
+tags: []
+meta:
+  _edit_last: '1'
+  geo_public: '0'
+  _thumbnail_id: '1472'
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '10641578513'
+  _publicize_done_external: a:1:{s:7:"twitter";a:1:{i:18590462;s:56:"https://twitter.com/swtkatelyn/status/922464518420287488";}}
+  _publicize_done_18777098: '1'
+  _wpas_done_18590462: '1'
+  publicize_twitter_user: swtkatelyn
+  publicize_linkedin_url: https://www.linkedin.com/updates?discuss=&scope=481862994&stype=M&topic=6328230211900968960&type=U&a=jn9Y
+  _publicize_done_18777103: '1'
+  _wpas_done_18590466: '1'
+  _jetpack_related_posts_cache: a:1:{s:32:"8f6677c9d6b0f903e98ad32ec61f8deb";a:2:{s:7:"expires";i:1583663993;s:7:"payload";a:3:{i:0;a:1:{s:2:"id";i:2385;}i:1;a:1:{s:2:"id";i:1835;}i:2;a:1:{s:2:"id";i:1917;}}}}
+  _facebook_shares: '0'
+  swp_cache_timestamp: '431842'
+  swp_pinterest_image_url: ''
+  _totes: '0'
+  _pinterest_shares: '0'
+  _twitter_shares: '0'
+  _linkedin_shares: '0'
+  _google_plus_shares: '0'
+  _total_shares: '0'
+author:
+  login: categitau
+  email: catherinegitau94@gmail.com
+  display_name: categitau
+  first_name: ''
+  last_name: ''
+permalink: "/finding-groups-in-data-clustering-techniques/"
+---
+<p>In the last couple of months, I got an opportunity to Intern at a startup whose main aim is to <em>Unleash the best in people </em>by matching talent with job opportunities using Machine Learning techniques. I was honored to work with a great team and in turn built a tremendous amount of knowledge thanks to them.</p>
+<p>This post will give an Introduction to Machine learning and the two main Clustering algorithms I got to learn and that every aspiring data scientist should know.</p>
+<p>&nbsp;</p>
+<p><!--more--></p>
+<p>Wikipedia defines Machine Learning as:</p>
+<blockquote><p>A field in computer science that gives computers the ability to learn without being explicitly programmed.</p></blockquote>
+<p>It basically explores the study and the construction of generic algorithms that can learn from and make predictions on data.</p>
+<p>There are several prominent applications of machine learning such as:</p>
+<ul>
+<li>Segmentation of customer behavior for targeted advertising</li>
+<li>Identification of unwanted spam messages in e-mail</li>
+<li>Identifying loans that are about to default</li>
+<li>Prediction of popular election outcomes</li>
+</ul>
+<p>Just to mention a few.</p>
+<p>Machine Learning algorithms come in different flavors, one commonly used class is <em>Supervised</em> and the other is <em>Unsupervised.</em></p>
+<h3>     1. Supervised Machine learning Algorithms</h3>
+<p>Supervised Machine learning methods are those that build models that predict an outcome. An example is determining customer churn or predicting whether a person is likely to default on paying a loan or not. Supervised learning requires that you have a training data set of situations of known outcomes. So, If I want to divide customers into two groups, say - “likely to churn” and “not likely to churn”, then I provide the computer with historical examples of such features (training data) and tell it to assign new data to one of the two groups, that’s supervised.</p>
+<h3>     2. Unsupervised Machine Learning Algorithms</h3>
+<p>Unsupervised machine learning methods are those that don't make explicit outcome predictions, but they discover hidden relationships in the data. For example, you come across a situation where your boss wants to understand customers better so that they can market their products in a better way. This is where unsupervised machine learning comes in. You'll have to find structures in the data or patterns that will help you to group the customers based on what they usually purchase.</p>
+<p>An example of a popular unsupervised machine learning algorithm is the <strong>Clustering algorithm</strong>:</p>
+<blockquote><p><em>Clustering </em>is the method of identifying similar groups of data in a data set. Entities that are in the same group are more similar to each other than with the entities in other groups.</p></blockquote>
+<p>One of the stores that take advantage of this technique is<em> <u><a href="https://en.wikipedia.org/wiki/Target_Corporation" target="_blank" rel="noopener">Target corporation</a></u>. </em>Target is a general merchandise store that sells a wide variety of products, from groceries to clothing, to household furnishings to electronic appliances<em>. </em>Target is always learning new ways to market and merchandise products within its stores by studying consumption patterns of customers to figure out what one likes, what you will need and which coupons are most likely to make you happy. They also figured out a way to find out whether you have a baby on the way long before you need to start buying diapers by just analyzing shopping patterns. Awesome right? You can read about how target did this in one of the best books I've read this year <a href="http://charlesduhigg.com/books/the-power-of-habit/" target="_blank" rel="noopener"><strong>The Power of Habit - Why We Do What We Do in Life and in Business</strong></a></p>
+<p>Enough about that, let's discuss some of the clustering algorithms. The most popular clustering algorithms are: <strong><em>K Means clustering</em></strong> and <em><strong>Hierarchical clustering.</strong></em></p>
+<p><strong><em>K</em> Means Clustering</strong></p>
+<p><em>K</em> means is an example of a centroid model, which is an iterative clustering algorithm where the idea of similarity is defined by the closeness of the data point to the center/ centroid of the  cluster. The goal in <em>K</em> means clustering is to take some points lets say, <em>n</em> points and then partition them into <em>k</em> clusters. Where k is any number of groups you'd like. Each group is defined by a point in the center which is known as the mean.</p>
+<p>Since humans are visual beings, I'll try to explain how the K- means clustering algorithm works using diagrams:</p>
+<p>i) First, K means clustering demands that you specify the number of clusters you'd like to assign to the data points. In this case, I'll use 3(<em>k=3</em>).</p>
+<p>ii) The algorithm then plants 3 flags (the shapes in blue) or<em> means </em>within the data randomly.</p>
+<p>[gallery ids="1383,1384" type="rectangular"]</p>
+<p>iii)Clusters are then created by associating every observation with the nearest mean. Partitions are created representing a<strong> <a href="https://en.wikipedia.org/wiki/Voronoi_diagram" target="_blank" rel="noopener">voronoi diagram</a></strong> which was generated by the <em>means</em>. Voronoi diagrams Indicate the areas that are closer to one cluster center/ mean than any other.</p>
+<p>[gallery ids="1385,1382" type="rectangular"]</p>
+<p>iv) Steps ii and iii are then repeated until we reach the global optima.</p>
+<p>Now that you're done clustering. The next step would be trying to understand what those clusters mean.</p>
+<p><strong>Hierarchical clustering</strong></p>
+<p>Hierarchical clustering is an example of a connectivity model where the data points that are closer in data space, exhibit more similarity than those that are farther away.</p>
+<p>Hierarchical clustering follows two approaches:</p>
+<p>Agglomerative approach - This is a "bottom-up" approach where the data/ population is classified into different clusters first and aggregating them as the distance decreases or as one moves up the hierarchy.</p>
+<p>Divisive approach - This is a "top-down approach" where the data or population is classified as one single cluster and then partitioned recursively and divided into smaller clusters as the distance decreases or as one moves down the hierarchy.</p>
+<p>[caption id="attachment_1396" align="alignnone" width="518"]<img class="alignnone size-full wp-image-1396" src="{{ site.baseurl }}/assets/capture.png" alt="Capture" width="518" height="409" /> Dendrogram[/caption]</p>
+<p>A good example of hierarchical clustering might be the standard plant taxonomy where the plants are first classified by family then genus, species etc.</p>
+<p>in R there's a function <strong><em>hclust()</em></strong> that takes an input as a distance matrix, which records the distances between all pairs of the points in the data then returns a <strong><em>dendrogram. </em></strong>Remember me talking about some kind of dendrogram in this <a href="https://categitau.wordpress.com/2017/03/28/ntw2017-day-1/">post</a>? Well, now I have a good understanding of what it's all about! :-)</p>
+<h3><strong>Conclusion</strong></h3>
+<p>In this post, I have given and introduction on the two most popular clustering algorithms that a data scientist should know. One of the soft skills that a data scientist should have is being able to communicate hard things using simple words that people can understand. This is one of the skills that I thought I'd practice on in this post, which explains why there wasn't any code. Next time I'll try to do a post on some Structured Machine learning algorithms as well.</p>
+<p>Any feedback is welcome.</p>
+<p>Till next time !</p>
+<h3><strong>References</strong></h3>
+<p><em><strong>Machine Learning in R By Brett lantz</strong> - </em><em><a href="https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-r-second-edition" target="_blank" rel="noopener">https://www.packtpub.com/big-data-and-business-intelligence/machine-learning-r-second-edition</a></em></p>
+<p><strong><em>Wikipedia</em></strong> -<a href="https://en.wikipedia.org/wiki/Machine_learning">https://en.wikipedia.org/wiki/Machine_learning</a></p>
+<p><a href="https://en.wikipedia.org/wiki/K-means_clustering" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/K-means_clustering</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Hierarchical_clustering" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Hierarchical_clustering</a></p>
+<p><em><strong>Practical data science in R by Nina-Zumel and John Mount-</strong></em><a href="https://www.amazon.com/Practical-Data-Science-Nina-Zumel/dp/1617291560" target="_blank" rel="noopener">https://www.amazon.com/Practical-Data-Science-Nina-Zumel/dp/1617291560</a></p>
+<p><em><strong>An Introduction to Clustering and different methods of clustering -</strong></em><a href="https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/">https://www.analyticsvidhya.com/blog/2016/11/an-introduction-to-clustering-and-different-methods-of-clustering/</a></p>
+<p><em><strong>Data Smart: using Data Science to transform information into insight By John W.Foreman</strong></em> -<a href="https://www.amazon.com/Data-Smart-Science-Transform-Information/dp/111866146X" target="_blank" rel="noopener">https://www.amazon.com/Data-Smart-Science-Transform-Information/dp/111866146X</a></p>
