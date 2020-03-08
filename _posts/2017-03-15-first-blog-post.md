@@ -3,7 +3,7 @@ title: 'First Things first'
 author: categitau
 comments: true
 date: 2017-03-15 09:10:01+00:00
-permalink: /posts/2017/03/first-blog-post/
+permalink: /posts/2017/03/first-blog-post
 tags:
     - first post
 ---
