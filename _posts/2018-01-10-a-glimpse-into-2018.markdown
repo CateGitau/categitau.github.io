@@ -1,0 +1,60 @@
+---
+author: categitau
+comments: true
+date: 2018-01-10 11:38:48+00:00
+layout: post
+link: http://categitau.com/a-glimpse-into-2018/
+slug: a-glimpse-into-2018
+title: A glimpse into 2018!
+wordpress_id: 1585
+---
+
+First off, I'd like to wish you all a Happy New Year!
+
+On that note, what's a new year post without setting some new year <del>resolutions</del> goals?<!-- more -->
+
+I'm always skeptical about sharing my goals with people because sometimes nothing gets really done, and by sharing them, I feel like it sometimes changes the purpose from focusing on the process to achieve the goal to trying to justify to my friends that I can actually keep to my goals and attain them and if I don't, then I'm a sucker and that's not the case. Also, I love the feeling that comes with sharing an achievement with people who weren't expecting it.
+
+It took me a while to decide what my first post this year will be about and I hate myself for conforming to this "new year goals" trend, but what the heck.
+
+This short post will outline not goals but some of the things I'm looking forward to regarding data science. Which basically are:
+
+
+
+ 	
+  * **Learning something new**
+
+
+In this world of data science, you just can't stop learning. I literally come across something new every single day. But what I mean is learning a totally different thing from what I've been up to in the last couple of months. Maybe get my hands dirty and learn me some [Tensor flow](https://www.tensorflow.org/)? Neural Nets? BI? Apache Spark? We'll see. Really excited about this.
+
+
+
+ 	
+  * **Contributing to others' data science paths**
+
+
+This includes writing content that helps people out there who are starting out on data science and I am also excited to be a part of [WiMLDS](https://www.meetup.com/Nairobi-Women-in-Machine-Learning-Data-Science/) community here in Nairobi, Kenya. Hoping to meet you at one of the meetups!
+
+
+
+ 	
+  * **Finish a Kaggle competition**
+
+
+Ever since I joined Kaggle, I've always left competitions unfinished. I've never even finished the beginner titanic one, but I learnt a lot on data exploration from it. So, this year I'll work towards completing at least one. Yay to that!
+
+ 	
+  * **More and more conferences**
+
+
+Last but not the least, I am looking forward to attending as many conferences as I possibly can this year. This way, I can get to share ideas and experiences with more people who are members of the Data science community, build my network and possibly attain new skills.
+
+Let's see what 2018 has in store for us!
+
+
+
+
+
+
+
+
