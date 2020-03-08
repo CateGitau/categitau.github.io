@@ -21,8 +21,8 @@ At this time, I'm just a final year student at the Jomo Kenytatta University of 
 I learnt something from one of my favorite motivational speakers:
 
 
-<blockquote>“People don't buy what you do; they buy why you do it. And what you do simply proves what you believe”
-― [Simon Sinek](https://www.goodreads.com/author/show/3158574.Simon_Sinek), [Start with Why: How Great Leaders Inspire Everyone to Take Action](https://www.goodreads.com/work/quotes/7367737)</blockquote>
+>“People don't buy what you do; they buy why you do it. And what you do simply proves what you believe”
+-[Simon Sinek](https://www.goodreads.com/author/show/3158574.Simon_Sinek), [Start with Why: How Great Leaders Inspire Everyone to Take Action](https://www.goodreads.com/work/quotes/7367737)
 
 
 Everyone needs to know their why. Why they are doing things they do, by why I mean their purpose or cause - Why do you wake up every morning to go to work? Why do you go to school? Why does your company exist? Why do you do the things you do? Knowing your why is what keeps you going, it's what gets you motivated and ready to face the world every morning. Since this is my first blog post, I’d like to jot down my why, this will be the reason I’ll come back and add content to my blog.
