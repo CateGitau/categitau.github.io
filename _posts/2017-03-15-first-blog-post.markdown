@@ -4,7 +4,7 @@ comments: true
 date: 2017-03-15 09:10:01+00:00
 excerpt: This is the excerpt for your very first post.
 layout: post
-link: http://categitau.com/first-blog-post/
+#link: http://categitau.com/first-blog-post/
 slug: first-blog-post
 title: First things first
 wordpress_id: 28
