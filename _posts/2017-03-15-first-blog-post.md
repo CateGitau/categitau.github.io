@@ -14,7 +14,7 @@ First things first, who am I? why have I decided to start blogging? and what do 
 
 **Who am I?**
 
-At this time, I'm just a final year student at the Jomo Kenytatta University of Agriculture and Technology pursuing a degree in Mathematics and Computer science, majoring in statistics (_Best decision I've ever made! _I'll get back to this in a later post).
+At this time, I'm just a final year student at the Jomo Kenytatta University of Agriculture and Technology pursuing a degree in Mathematics and Computer science, majoring in statistics (*Best decision I've ever made!* I'll get back to this in a later post).
 
 **The Why**
 

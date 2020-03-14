@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Cate Gitau"
   avatar           : "profile.png"
-  bio              : "Lifelong learner | Student African Masters in Machine Intelligence"
+  bio              : "Student African Masters in Machine Intelligence | Machine Learning | Natural Language Processing"
   location         : "Accra, Ghana"
   employer         : 
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -112,7 +112,7 @@ author:
   twitter          : "categitau_"
   vine             :
   weibo            :
-  xing             :
+  medium           : "@categitau"
   youtube          :
   wikipedia        :
 

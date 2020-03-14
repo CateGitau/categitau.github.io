@@ -1,43 +1,42 @@
 ---
-author: categitau
 comments: true
 date: 2017-03-21 19:57:44+00:00
 layout: post
-link: http://categitau.com/numpy-what/
-slug: numpy-what
+permalink: /posts/2017/03/numpy-what
 title: NumPy..What??
 wordpress_id: 38
 categories:
 - Data Science
+
+tags:
+- numpy
+- python
 ---
 
-<!-- more -->In my last post [first things first](https://categitau.wordpress.com/2017/03/15/first-blog-post/) , I made a Data science 'Joke' at the end , Mentioning some weird word **_NumPy_**.. So, what's **NumPy?**
+<!-- more -->In my last post [first things first(https://categitau.wordpress.com/2017/03/15/first-blog-post/) , I made a Data science 'Joke' at the end , Mentioning some weird word **NumPy** .. So, what's **NumPy?**
 
 NumPy stands for Numerical Python. It is one of the many libraries in python used for scientific computations and data analysis. It also provides basic routines for manipulating large arrays and matrices of numeric data. So, no matter what the data is, the first step of making it analyzable is by transforming it into arrays.
 
 There are other Libraries used in python such as:
-
-
-
 	
   * **Matplotlib** which is used in plotting graphs
 
 	
-  * **Pandas **that are used for structured data operations and manipulations.
+  * **Pandas** that are used for structured data operations and manipulations.
 
 	
-  * **SciPy t**hat stands for Scientific Python which is built on Numpy.
+  * **SciPy** that stands for Scientific Python which is built on Numpy.
 
 	
-  * **SciKit Learn **which is used in Machine learning and built on Numpy, Matplotlib and SciPy.
+  * **SciKit Learn** which is used in Machine learning and built on Numpy, Matplotlib and SciPy.
 
 	
-  * **Bokeh **for creating interactive plots and data applications on modern web browsers.
+  * **Bokeh** for creating interactive plots and data applications on modern web browsers.
 
 
 ...and others, but today I'll just talk about NumPy and just a little bit of Pandas.
 
-The most powerful feature of NumPy is N-Dimensional array. An _ndarray (N-Dimensional array) _is usually a multidimensional container of items of the same size and type. The number of dimensions in an array is defined by Its shape, which is a tuple of N positive integers that specify the size of each dimension.
+The most powerful feature of NumPy is N-Dimensional array. An ndarray (N-Dimensional array) is usually a multidimensional container of items of the same size and type. The number of dimensions in an array is defined by Its shape, which is a tuple of N positive integers that specify the size of each dimension.
 
 Example:
 
@@ -51,7 +50,7 @@ You can get more data types on [Understanding Data Types in Python](http://loca
 
 The central feature in **NumPy** is the _array_ object class, arrays are somewhat similar to lists in python, except that every element of an array must be of the same time. i.e. int, Boolean, strings must be the same in every array, but in Python, you can mix it up with lists, strings and Boolean.
 
-NumPy also includes a bunch of convenient functions such as mean (), std () , you can also use these functions on python lists but if your data is in NumPy array, the these functions will be faster.
+NumPy also includes a bunch of convenient functions such as mean(), std() , you can also use these functions on python lists but if your data is in NumPy array, the these functions will be faster.
 
 Some similarities of NumPy arrays and Python Lists are that in both you can access elements by position, you can also access a range of elements e.g. [3:5] and you can use for loops in both.
 
