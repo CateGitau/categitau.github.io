@@ -3,7 +3,6 @@ title: NumPy..What??
 author: categitau
 comments: true
 date: 2017-03-21 19:57:44+00:00
-layout: post
 permalink: /posts/2017/03/numpy-what
 categories:
   - Data Science
