@@ -1,16 +1,15 @@
 ---
+title: NumPy..What??
 comments: true
 date: 2017-03-21 19:57:44+00:00
 layout: post
 permalink: /posts/2017/03/numpy-what
-title: NumPy..What??
-wordpress_id: 38
 categories:
-- Data Science
+  - Data Science
 
 tags:
-- numpy
-- python
+  - numpy
+  - python
 ---
 
 <!-- more -->In my last post [first things first(https://categitau.wordpress.com/2017/03/15/first-blog-post/) , I made a Data science 'Joke' at the end , Mentioning some weird word **NumPy** .. So, what's **NumPy?**
