@@ -39,11 +39,10 @@ The most powerful feature of NumPy is N-Dimensional array. An ndarray (N-Dimens
 
 Example:
 
-![ndarrays](http://categitau.com/wp-content/uploads/2017/03/ndarrays.png)
 
 NumPy also has various attributes such as _ndim_ (number of dimensions), _shape_(size of each dimension and _size_(the total size of the array):
 
-![attributes](http://categitau.com/wp-content/uploads/2017/03/attributes.png)
+
 
 You can get more data types on [Understanding Data Types in Python](http://localhost:8888/notebooks/02.01-Understanding-Data-Types.ipynb)
 
