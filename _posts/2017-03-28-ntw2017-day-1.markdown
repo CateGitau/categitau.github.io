@@ -1,14 +1,13 @@
 ---
+title: '#NTW2017 Day 1'
 author: categitau
 comments: true
 date: 2017-03-28 07:28:55+00:00
-layout: post
-link: http://categitau.com/ntw2017-day-1/
-slug: ntw2017-day-1
-title: '#NTW2017 Day 1'
-wordpress_id: 141
-categories:
-- Events &amp; Meetups
+permalink: /posts/2017/03/ntw2017-day-1
+
+tags:
+    - Events
+    - Meetups
 ---
 
 **Nairobi Tech Week (NTW)** is sub-Saharan's largest annual Tech event. This year they were holding their second event in Strathmore University, Nairobi Kenya.

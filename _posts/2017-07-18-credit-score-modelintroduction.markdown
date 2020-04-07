@@ -1,13 +1,11 @@
 ---
+title: Credit Score Model
 author: categitau
 comments: true
 date: 2017-07-18 13:02:34+00:00
-layout: post
-link: http://categitau.com/credit-score-modelintroduction/
-slug: credit-score-modelintroduction
-title: Credit Score Model
-wordpress_id: 451
-categories:
+permalink: /posts/2017/07/credit-score-modelintroduction
+
+tags:
 - Data Science
 - Projects
 ---

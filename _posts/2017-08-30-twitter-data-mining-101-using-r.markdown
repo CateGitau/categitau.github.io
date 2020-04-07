@@ -1,15 +1,13 @@
 ---
+title: Twitter data Mining 101 using R
 author: categitau
 comments: true
 date: 2017-08-30 15:02:53+00:00
-layout: post
-link: http://categitau.com/twitter-data-mining-101-using-r/
-slug: twitter-data-mining-101-using-r
-title: Twitter data Mining 101 using R
-wordpress_id: 668
+permalink: /posts/2017/08/twitter-data-mining-101-using-r
+
 categories:
 - Data Science
-- Tutorials
+
 tags:
 - mining
 - Text analytics

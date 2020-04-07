@@ -1,12 +1,10 @@
 ---
+title: Road to Becoming a Visible Expert
 author: categitau
 comments: true
 date: 2019-12-24 10:50:56+00:00
-layout: post
-link: https://categitau.com/road-to-becoming-a-visible-expert/
-slug: road-to-becoming-a-visible-expert
-title: Road to Becoming a Visible Expert
-wordpress_id: 2292
+permalink: /posts/2017/03/road-to-becoming-a-visible-expert
+
 ---
 
 It's been a long time coming but I finally decided to get back to writing. Great to have you reading my first post in 2019! Like some wise man once said; 'better late than never'. This past year's been full of ups and downs and a lot of learning and traveling involved. Just a quick recap of what I have been up-to before I go on:

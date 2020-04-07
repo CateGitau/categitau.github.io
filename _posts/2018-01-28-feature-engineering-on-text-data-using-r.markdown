@@ -1,13 +1,12 @@
 ---
+title: Feature Engineering on text data using R
 author: categitau
 comments: true
 date: 2018-01-28 18:44:18+00:00
-layout: post
-link: http://categitau.com/feature-engineering-on-text-data-using-r/
-slug: feature-engineering-on-text-data-using-r
-title: Feature Engineering on text data using R
-wordpress_id: 1602
-categories:
+permalink: /posts/2018/01/feature-engineering-on-text-data-using-r
+
+
+tags:
 - Data Science
 - Machine Learning
 ---

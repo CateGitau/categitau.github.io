@@ -1,12 +1,10 @@
 ---
+title: Deep dive into Supervised Learning
 author: categitau
 comments: true
 date: 2020-01-13 16:18:41+00:00
-layout: post
-#link: https://categitau.com/deep-dive-into-supervised-learning/
-slug: deep-dive-into-supervised-learning
-title: Deep dive into Supervised Learning
-wordpress_id: 2403
+permalink: /posts/2020/01/deep-dive-into-supervised-learning
+
 tags:
 - data science
 - machine learning

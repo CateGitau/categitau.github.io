@@ -1,15 +1,14 @@
 ---
+title: 'Recap: Nairobi WiDS Conference 2018'
 author: categitau
 comments: true
 date: 2018-03-14 18:52:26+00:00
-layout: post
-link: http://categitau.com/wids-conference-2018/
-slug: wids-conference-2018
-title: 'Recap: Nairobi WiDS Conference 2018'
-wordpress_id: 1719
-categories:
+permalink: /posts/2018/03/wids-conference-2018
+
+tags:
 - Data Science
-- Events &amp; Meetups
+- Events
+- Meetups
 - Machine Learning
 - Research
 ---

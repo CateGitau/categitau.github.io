@@ -1,12 +1,10 @@
 ---
+title: A glimpse into 2018!
 author: categitau
 comments: true
 date: 2018-01-10 11:38:48+00:00
-layout: post
-link: http://categitau.com/a-glimpse-into-2018/
-slug: a-glimpse-into-2018
-title: A glimpse into 2018!
-wordpress_id: 1585
+permalink: /posts/2018/01/a-glimpse-into-2018
+
 ---
 
 First off, I'd like to wish you all a Happy New Year!

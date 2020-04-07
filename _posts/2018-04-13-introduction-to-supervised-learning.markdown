@@ -1,13 +1,11 @@
 ---
+title: Classification in Supervised Learning - All you need to know!
 author: categitau
 comments: true
 date: 2018-04-13 06:00:23+00:00
-layout: post
-link: http://categitau.com/introduction-to-supervised-learning/
-slug: introduction-to-supervised-learning
-title: Classification in Supervised Learning - All you need to know!
-wordpress_id: 1774
-categories:
+permalink: /posts/2018/04/introduction-to-supervised-learning
+
+tags:
 - Data Science
 - Machine Learning
 - supervised learning

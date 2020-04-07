@@ -1,13 +1,11 @@
 ---
+title: Data Scientist vs Data Analyst
 author: categitau
 comments: true
 date: 2018-03-29 06:00:29+00:00
-layout: post
-link: http://categitau.com/data-scientist-vs-data-analyst/
-slug: data-scientist-vs-data-analyst
-title: Data Scientist vs Data Analyst
-wordpress_id: 1759
-categories:
+permalink: /posts/2018/03/data-scientist-vs-data-analyst
+
+tags:
 - Data Science
 - Research
 ---

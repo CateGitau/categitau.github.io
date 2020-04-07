@@ -1,15 +1,13 @@
 ---
+title: Success Stories of Reinforcement Learning
 author: categitau
 comments: true
 date: 2018-11-16 13:38:13+00:00
-layout: post
-link: http://categitau.com/success-stories-of-reinforcement-learning/
-slug: success-stories-of-reinforcement-learning
-title: Success Stories of Reinforcement Learning
-wordpress_id: 1917
----
+permalink: /posts/2018/11/success-stories-of-reinforcement-learning
 
-**Tl;dr**
+tags:
+  - Reinforcement Learning
+---
 
 In September 2018, I got the opportunity to attend the [Deep Learning Indaba](http://www.deeplearningindaba.com/) conference that was held in Stellenbosch University, South Africa. Deep Learning Indaba was formed with an aim to strengthen African Machine Learning as well as to increase African participation and contribution to the advances in artificial intelligence and machine learning, and address issues of diversity in these fields of science. One of the lectures that I really enjoyed was on **Success Stories of Reinforcement Learning **where we got introduced to reinforcement learning as well as how it was used to build some pretty awesome computer programs. This lecture was presented by [David Silver](https://en.wikipedia.org/wiki/David_Silver_(programmer)). Professor David Silver Leads the reinforcement learning research group at [DeepMind](https://en.wikipedia.org/wiki/DeepMind) which is an AI company based in London that was acquired by Google in 2014. He was also a researcher on [AlphaGo](https://en.wikipedia.org/wiki/AlphaGo), a computer program that plays the board game Go. You can find other slides and videos from the conference [here.](http://www.deeplearningindaba.com/slides-2018.html)
 

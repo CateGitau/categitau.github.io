@@ -1,13 +1,11 @@
 ---
+title: What is Machine Learning's role in Dynamic Pricing?
 author: categitau
 comments: true
 date: 2018-05-14 10:30:46+00:00
-layout: post
-link: http://categitau.com/dynamic-pricing/
-slug: dynamic-pricing
-title: What is Machine Learning's role in Dynamic Pricing?
-wordpress_id: 1851
-categories:
+permalink: /posts/2018/14/dynamic-pricing
+
+tags:
 - Data Science
 - Machine Learning
 - Research

@@ -2,14 +2,13 @@
 author: categitau
 comments: true
 date: 2017-11-24 12:29:09+00:00
-layout: post
-link: http://categitau.com/gdg-devfest-nairobi-2017/
-slug: gdg-devfest-nairobi-2017
+permalink: /posts/2017/11/gdg-devfest-nairobi-2017
 title: GDG DevFest Nairobi 2017!
-wordpress_id: 1493
-categories:
+
+tags:
 - Data Science
-- Events &amp; Meetups
+- Events
+- Meetups
 - Machine Learning
 ---
 

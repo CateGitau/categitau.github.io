@@ -1,13 +1,10 @@
 ---
+title: Fuzzy String Matching in Python
 author: categitau
 comments: true
 date: 2018-02-28 07:17:58+00:00
-layout: post
-link: http://categitau.com/fuzzy-string-matching-in-python/
-slug: fuzzy-string-matching-in-python
-title: Fuzzy String Matching in Python
-wordpress_id: 1692
-categories:
+permalink: /posts/2018/02/fuzzy-string-matching-in-python
+tags:
 - Data Science
 - Python
 ---

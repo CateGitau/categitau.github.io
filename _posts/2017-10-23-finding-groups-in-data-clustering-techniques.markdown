@@ -2,13 +2,11 @@
 author: categitau
 comments: true
 date: 2017-10-23 14:07:28+00:00
-layout: post
-link: http://categitau.com/finding-groups-in-data-clustering-techniques/
-slug: finding-groups-in-data-clustering-techniques
+permalink: /posts/2017/03/finding-groups-in-data-clustering-techniques
 title: 'Finding groups in data : Clustering techniques'
-wordpress_id: 1115
-categories:
-- Data Science
+
+tags:
+  - Data Science
 ---
 
 In the last couple of months, I got an opportunity to Intern at a startup whose main aim is to _Unleash the best in people _by matching talent with job opportunities using Machine Learning techniques. I was honored to work with a great team and in turn built a tremendous amount of knowledge thanks to them.

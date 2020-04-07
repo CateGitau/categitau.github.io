@@ -1,12 +1,10 @@
 ---
+title: Using rvest to scrape data from Wikipedia
 author: categitau
 comments: true
 date: 2018-02-14 13:39:55+00:00
-layout: post
-link: http://categitau.com/using-rvest-to-scrape-data-from-wikipedia/
-slug: using-rvest-to-scrape-data-from-wikipedia
-title: Using rvest to scrape data from Wikipedia
-wordpress_id: 1663
+permalink: /posts/2018/02/using-rvest-to-scrape-data-from-wikipedia
+
 ---
 
 

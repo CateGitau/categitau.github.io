@@ -1,13 +1,11 @@
 ---
+title: 'Must Haves: 10 Data Science Books'
 author: categitau
 comments: true
 date: 2018-05-01 18:14:49+00:00
-layout: post
-link: http://categitau.com/must-haves-10-data-science-books/
-slug: must-haves-10-data-science-books
-title: 'Must Haves: 10 Data Science Books'
-wordpress_id: 1835
-categories:
+permalink: /posts/2018/05/must-haves-10-data-science-books
+
+tags:
 - Data Science
 - Research
 ---

@@ -1,12 +1,10 @@
 ---
+title: A Basic Introduction to Cohort Analysis in R
 author: categitau
 comments: true
 date: 2018-05-29 19:23:33+00:00
-layout: post
-link: http://categitau.com/introduction-to-cohort-analysis-in-r/
-slug: introduction-to-cohort-analysis-in-r
-title: A Basic Introduction to Cohort Analysis in R
-wordpress_id: 1880
+permalink: /posts/2018/05/introduction-to-cohort-analysis-in-r
+
 ---
 
 "_Just like a doctor has to stay up to date with the latest medical developments, learning never stops for a data scientist. Technology is evolving pretty quickly, so as this field; If you are not passionate about the field and do not enjoy learning, then data science is not for you_." <!-- more -->

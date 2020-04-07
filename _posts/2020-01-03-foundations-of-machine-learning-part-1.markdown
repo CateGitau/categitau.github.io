@@ -1,17 +1,11 @@
 ---
+title: Introduction To Machine Learning
 author: categitau
 comments: true
 date: 2020-01-03 23:01:40+00:00
-layout: post
-link: https://categitau.com/foundations-of-machine-learning-part-1/
-slug: foundations-of-machine-learning-part-1
-title: Introduction To Machine Learning
-wordpress_id: 2385
-categories:
-- Data Science
-- Machine Learning
-- supervised learning
-- unsupervised learning
+permalink: /posts/2020/01/foundations-of-machine-learning-part-1
+
+
 tags:
 - machine learning
 - supervised learning

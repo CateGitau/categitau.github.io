@@ -1,16 +1,14 @@
 ---
+title: How to Evaluate Classification Models
 author: categitau
 comments: true
 date: 2018-04-20 16:39:06+00:00
-layout: post
-link: http://categitau.com/evaluating-classification-models/
-slug: evaluating-classification-models
-title: How to Evaluate Classification Models
-wordpress_id: 1787
-categories:
-- Data Science
-- Machine Learning
-- supervised learning
+permalink: /posts/2018/04/evaluating-classification-models
+
+tags:
+  - Data Science
+  - Machine Learning
+  - supervised learning
 ---
 
 Let's say you have the last 3 years sales data by month and you want to predict the next year's sales (_this is an example of a regression problem_). What you would do is give your machine a sample of this data from the past years and ask it to predict the remainder of the known results you have. Once it does that, you can then compare its prediction to what actually happened to figure out how accurate it was. You will have to run lots of statistical models to try to come up with the most accurate prediction and use that.<!-- more -->

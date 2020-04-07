@@ -1,13 +1,11 @@
 ---
+title: Text Analysis with R
 author: categitau
 comments: true
 date: 2017-09-21 15:50:24+00:00
-layout: post
-link: http://categitau.com/text-mining-with-r/
-slug: text-mining-with-r
-title: Text Analysis with R
-wordpress_id: 865
-categories:
+permalink: /posts/2017/09/text-mining-with-r
+
+tags:
 - Data Science
 - Tutorials
 ---
