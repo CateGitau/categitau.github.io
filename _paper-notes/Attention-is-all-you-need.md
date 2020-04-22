@@ -2,7 +2,7 @@
 title: "Attention is All you Need"
 collection: paper-notes
 permalink: /paper-notes/Attention-is-all-you-need
-date: 2016
+date: 2020/04/22
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.
