@@ -202,14 +202,12 @@ defaults:
   # _paper-notes
   - scope:
       path: ""
-      type: posts
+      type: paper-notes
     values:
       layout: single
       author_profile: true
-      read_time: true
       comments: true
       share: true
-      related: true
   # _pages
   - scope:
       path: ""
