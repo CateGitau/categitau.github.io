@@ -1,16 +1,17 @@
 ---
-title: Attention is all you need
-author: categitau
-comments: true
-date: 2020-04-22 
-permalink: /paper-notes/2020/04/Attention-is-all-you-need
-
-categories:
-- Deep Learning
-
-tags:
-- NLP
-- Transformers
+title: "Attention is All you Need"
+collection: paper-notes
+permalink: /paper-notes/Attention-is-all-you-need
+date: 2016
 ---
 
-bla bla
+This is a description of a teaching experience. You can use markdown like any other post.
+
+Heading 1
+======
+
+Heading 2
+======
+
+Heading 3
+======
