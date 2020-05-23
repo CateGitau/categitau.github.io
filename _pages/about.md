@@ -14,8 +14,10 @@ My name is Catherine Muthoni Gitau, I am currently a student at the [African Mas
 # Research Interests
 Currently interested in doing applied research in the following areas:
 - Natural Language Processing
-  - Topic modeling
-- Recommendation Systems
+  - Language modeling
+  - Machine Translation
+
+- Machine Learning
 
 *** 
 # Talks
