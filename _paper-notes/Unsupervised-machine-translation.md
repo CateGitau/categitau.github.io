@@ -1,8 +1,7 @@
 ---
-title: "Attention is All you Need"
+title: "Unsupervised Machine Translation"
 collection: paper-notes
-permalink: /paper-notes/Attention-is-all-you-need
-date: 2020-04-22
+permalink: /paper-notes/Unsupervised-machine-translation
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.
