@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-CV in [PDF version](/archive/Catherine_Gitau_cv.pdf)  or [LinkedIn Profile](https://www.linkedin.com/in/cate-gitau/).
+CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 
 
 ---
@@ -36,7 +36,7 @@ CV in [PDF version](/archive/Catherine_Gitau_cv.pdf)  or [LinkedIn Profile](http
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lautech-logo](/image/cv/usf.jpg)
+![usf-logo](/images/cv/usf.jpg)
 </td>
 <td></td>
 <td markdown="1">
@@ -47,7 +47,7 @@ CV in [PDF version](/archive/Catherine_Gitau_cv.pdf)  or [LinkedIn Profile](http
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![jkuat-logo](/image/cv/jkuat_logo.jpg)
+![jkuat-logo](/images/cv/jkuat_logo.jpg)
 </td>
 <td></td>
 <td markdown="1">
