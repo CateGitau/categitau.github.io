@@ -92,6 +92,65 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 
 ---
 
+# Work Experiences
+---
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![proto-logo](/images/cv/proto.gif)
+</td>
+<td></td>
+<td markdown="1">
+[**Proto**](https://proto.cx/), 2020 
+- NLP Engineer, (Remote)
+</td> 
+</tr>
+
+<tr height="10"/>
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![cadcg](/images/cv/at.png)
+</td>
+<td></td>
+<td markdown="1">
+[**Africa's Talking**](https://africastalking.com/), 04/2018 - current
+- Data Scientist
+</td> 
+</tr>
+
+<tr height="10"/>
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![cadcg](/images/cv/ongair.png)
+</td>
+<td></td>
+<td markdown="1">
+[**Ongair Limited**](https://ongair.im/), 10/2017 - 04/2018 
+- Junior Data Scientist
+</td> 
+</tr>
+
+<tr height="10"/>
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![cadcg](/images/cv/brave.jpg)
+</td>
+<td></td>
+<td markdown="1">
+[**Brave Venture Labs**](https://brave.careers/), 06/2017 - 10/2017 
+- Data Science Intern
+</td> 
+</tr>
+
+</table>
 
 
 
