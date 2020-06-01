@@ -164,7 +164,7 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![indaba-logo](/image/cv/indaba.png)
+![indaba-logo](/images/cv/indaba.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -177,7 +177,7 @@ The **Deep Learning IndabaX** is an initiative to strengthen Nigerian Machine Le
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![useR](/image/cv/useR.png)
+![useR](/images/cv/useR.png)
 </td>
 <td></td>
 <td markdown="1">
