@@ -33,6 +33,7 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 <td markdown="1">
 [**African Institute for Mathematical Science, (AIMS)**](https://www.aims.edu.gh/), 10/2019 - Present 
 - **MSc In Machine Intelligence, [AMMI](https://aimsammi.org/)**
+- **Supervisor, [Vukosi Marivate](http://www.vima.co.za/)**
 - *Full Scholarship from Facebook and Google*
 </td> 
 </tr>
