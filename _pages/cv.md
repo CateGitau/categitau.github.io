@@ -36,7 +36,7 @@ CV in [PDF version](/archive/Catherine_Gitau_cv.pdf)  or [LinkedIn Profile](http
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lautech-logo](/image/cv/usf.jpg.png)
+![lautech-logo](/image/cv/usf.jpg)
 </td>
 <td></td>
 <td markdown="1">
@@ -47,7 +47,7 @@ CV in [PDF version](/archive/Catherine_Gitau_cv.pdf)  or [LinkedIn Profile](http
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![jkuat-logo](/img/main/jkuat_logo.jpg)
+![jkuat-logo](/image/cv/jkuat_logo.jpg)
 </td>
 <td></td>
 <td markdown="1">
@@ -55,10 +55,12 @@ CV in [PDF version](/archive/Catherine_Gitau_cv.pdf)  or [LinkedIn Profile](http
 - **BSc. Mathematics and Computer Science**
 </td> 
 </tr>
-
-
-
 </table>
+
+
+
+
+
 
 <style type="text/css">
 td {
@@ -118,34 +120,12 @@ td {
 }
 </style>
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
+<!--Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul>-->
   
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+ 
