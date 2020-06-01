@@ -52,7 +52,7 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![jkuat-logo](/images/cv/jkuat-logo.jpg)
+![jkuat-logo](/images/cv/jkuat-logo.png)
 </td>
 <td></td>
 <td markdown="1">
