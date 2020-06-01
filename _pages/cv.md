@@ -7,7 +7,9 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+<!--{% include base_path %}-->
+{% assign posts_collate = site.categories.projects %}
+{% include JB/posts_collate %}
 
 CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 
