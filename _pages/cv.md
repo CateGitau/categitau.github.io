@@ -64,11 +64,8 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 ---
 
 # Work Experiences
-======
-<table style="width:100%">
-<col width="17%">
-<col width="20">
-<col >
+
+---
 
 <table style="width:100%">
 <col width="17%">
@@ -125,7 +122,8 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 ---
 
 # Conferences and Workshops 
-======
+
+---
 <table style="width:100%">
 <col width="17%">
 <col width="20">
@@ -157,10 +155,11 @@ The **UseR Conference** useR! is the main meeting of the R user and developer co
 </tr>
 </table>
 
-
+----
 # Skills
 
-======
+---- 
+
 <div class="container">
 
 <div class="leftpane1" markdown="1">
