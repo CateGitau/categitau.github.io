@@ -59,8 +59,6 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 
 ---
 
----
-
 # Skills
 ---
 <div class="container">
@@ -155,7 +153,40 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 </tr>
 </table>
 
+---
 
+# Conferences and Workshops 
+---
+<table style="width:100%">
+<col width="17%">
+<col width="20">
+<col >
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![indaba-logo](/image/cv/indaba.png)
+</td>
+<td></td>
+<td markdown="1">
+[Deep Learning Indaba, Nairobi Kenya (2018) & Stellenbosh University(2019)](http://www.deeplearningindaba.com/)
+
+The **Deep Learning IndabaX** is an initiative to strengthen Nigerian Machine Learning community by increasing participation and contribution to the advances in artificial intelligence and machine learning, I attended attend the IndabaX 2019 that was held at the University of Lagos, Nigeria.
+</td> 
+</tr>
+
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![useR](/image/cv/useR.png)
+</td>
+<td></td>
+<td markdown="1">
+[UseR Conference 2019 ](https://user2019.r-project.org/)
+
+The **UseR Conference** useR! is the main meeting of the R user and developer community, its program consisting of both invited and user-contributed presentations.
+</td> 
+</tr>
+</table>
 
 
 
