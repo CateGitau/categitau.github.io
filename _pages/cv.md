@@ -57,6 +57,42 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 </tr>
 </table>
 
+---
+
+# Skills
+---
+<div class="container">
+<div class="leftpane1" markdown="1">
+#### Programming
+- Python
+-R
+-Scala
+</div>
+  
+<div class="leftpane1" markdown="1">
+#### Libraries
+- PyTorch
+- Spark
+- Tensorflow
+</div>
+  
+<div class="leftpane1" markdown="1">
+#### Tools
+- Git 
+- LaTeX
+- Google Cloud
+</div>
+
+<div class="leftpane1" markdown="1">
+#### Language
+- English
+- Swahili
+</div>
+</div>
+
+---
+
+
 
 
 
