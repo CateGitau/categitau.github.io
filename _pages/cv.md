@@ -8,6 +8,8 @@ redirect_from:
 ---
 
 <!--{% include base_path %}-->
+{% include base_path %}
+{% include JB/setup %}
 {% assign posts_collate = site.categories.projects %}
 {% include JB/posts_collate %}
 
