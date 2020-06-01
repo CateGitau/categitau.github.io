@@ -59,6 +59,8 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 
 ---
 
+---
+
 # Skills
 ---
 <div class="container">
@@ -89,6 +91,8 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 - Swahili
 </div>
 </div>
+
+---
 
 ---
 
@@ -149,7 +153,6 @@ CV in [PDF](/archive/Catherine_Gitau_cv.pdf) version
 - Data Science Intern
 </td> 
 </tr>
-
 </table>
 
 
