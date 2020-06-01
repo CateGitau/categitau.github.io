@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-CV in [PDF version](/archive/SewadeOgunCV.pdf)  or [LinkedIn Profile](https://www.linkedin.com/in/sewade-ogun/).
+CV in [PDF version](/archive/Catherine_Gitau_cv.pdf)  or [LinkedIn Profile](https://www.linkedin.com/in/cate-gitau/).
 
 
 ---
@@ -23,7 +23,7 @@ CV in [PDF version](/archive/SewadeOgunCV.pdf)  or [LinkedIn Profile](https://ww
 
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![aims-ghana-logo](/img/main/aims-ghana.png)
+![aims-ghana-logo](/images/cv/aims-ghana.png)
 </td>
 <td></td>
 <td markdown="1">
@@ -33,28 +33,30 @@ CV in [PDF version](/archive/SewadeOgunCV.pdf)  or [LinkedIn Profile](https://ww
 </td> 
 </tr>
 
-<tr style="border-bottom:1pt solid #eee">
-<td markdown="1">
-![unilag-logo](/img/main/unilag-logo.jpg)
-</td>
-<td></td>
-<td markdown="1">
-[**The University of Lagos**](https://www.uwc.ac.za/), 08/2018 - 06/2019 
-- **MSc in Electrical Engineering**
-</td> 
-</tr>
-
 <tr height="10"/>
 <tr style="border-bottom:1pt solid #eee">
 <td markdown="1">
-![lautech-logo](/img/main/lautech-logo.png)
+![lautech-logo](/image/cv/usf.jpg.png)
 </td>
 <td></td>
 <td markdown="1">
-[**Ladoke Akintola University of Technology**](https://www.lautech.edu.ng/), 2007 - 2012
-- **Bachelors of Technology (Honors), Electronic and Electrical Engineering**
+[**University of San Francisco**](https://www.usfca.edu/), 03/2019 - 05/2019
+- **Deep Learning Certificate**
 </td> 
 </tr>
+
+<tr style="border-bottom:1pt solid #eee">
+<td markdown="1">
+![jkuat-logo](/img/main/jkuat_logo.jpg)
+</td>
+<td></td>
+<td markdown="1">
+[**Jomo Kenyatta University of Agriculture and Technology**](http://www.jkuat.ac.ke/), 10/2013 - 06/2017 
+- **BSc. Mathematics and Computer Science**
+</td> 
+</tr>
+
+
 
 </table>
 
