@@ -2,7 +2,7 @@
 title: Seq to Seq MT
 author: categitau
 comments: true
-date: 2017-09-21 15:50:24+00:00
+date: 2020-07-04 15:50:24+00:00
 permalink: /posts/2020/07/seq-to-seq-mt
 
 tags:
