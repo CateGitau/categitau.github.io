@@ -1,6 +1,6 @@
 ---
 title: "Swahili Speech Datatset"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/projects/micah-boswell-unsplash'>"
+excerpt: " A dataset for low-resource speech tasks. <br/><img src='/images/projects/micah-boswell-unsplash.jpg'>"
 collection: portfolio
 ---
 
