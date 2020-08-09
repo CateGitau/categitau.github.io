@@ -1,7 +1,7 @@
 ---
-title: "Project Name"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Swahili Speech Datatset"
+excerpt: "Short description of portfolio item number 1<br/><img src='/images/projects/micah-boswell-unsplash'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+This project was done while at the African Masters in Machine Intelligence Program. It contains approximately 2 hours of audio recordings in swahili. This data can be used for low-resource related speech tasks. You can find more details about the project on [my github repo](https://github.com/CateGitau/Swahili-Speech)
