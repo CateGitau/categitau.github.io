@@ -15,7 +15,9 @@ tags:
 
 Here's what we will cover:
 
-1. TOC
+1. The generated Toc will be an ordered list
 {:toc}
 
-## Introduction
+# Introduction
+
+## H2 header
