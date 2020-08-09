@@ -2,7 +2,7 @@
 title: Understanding BLEU, Machine Translation Evaluation Metric
 author: categitau
 comments: true
-date: 2020-07-04 15:50:24+00:00
+date: 2020-08-08 15:50:24+00:00
 permalink: /posts/2020/08/understanding-bleu
 
 tags:
@@ -15,8 +15,7 @@ tags:
 
 Here's what we will cover:
 
-1.TOC
-
+1. TOC
 {:toc}
 
 ## Introduction
