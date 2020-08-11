@@ -38,10 +38,10 @@ One measures the quality of a translation based on how close it is to a proffess
 
 Let's say we have a swahili sentence and its reference traslations which are various correct ways the sentence can be translated to in to english.
 
-Swahili : Kuna paka kwenye mkeka 
+**Swahili** : Kuna paka kwenye mkeka 
 
-Reference 1: The cat is on the mat<br/>
-Reference 2: There is a cat on the mat 
+**Reference 1**: The cat is on the mat<br/>
+**Reference 2**: There is a cat on the mat 
 
 The intuition behind the BLEU score is that a good translation shares many words and phrases with the references. BLEU compares n-grams of the machine translation output which is known as a **candidate** with the n-grams of the reference translations, then count the number of matches, where the matches are position independent. 
 
@@ -50,13 +50,13 @@ BLEU metric is based on the presison metric. Precision is computerd by counting 
 
 Using the example above plus a MT outputs 1 & 2(candidate sentence):
 
-Swahili : Kuna paka kwenye mkeka 
+**Swahili** : Kuna paka kwenye mkeka 
 
-Reference 1: The cat is on the mat<br/>
-Reference 2: There is a cat on the mat 
+**Reference 1**: The cat is on the mat<br/>
+**Reference 2**: There is a cat on the mat 
 
-MT Output 1: the cat the cat on the mat<br/>
-MT Output 2: the the the the the the the 
+**MT Output 1**: the cat the cat on the mat<br/>
+**MT Output 2**: the the the the the the the 
 
 calcualting the unigram precision of MT output of 1, we would count the number of unigrams in MT Output 1 that appear in any of the reference sentences then divide that total count with the total number of words in the candidate translation as shown below:
 
@@ -102,15 +102,24 @@ Using out example above, we would now end up with the table shown:
 Therefore out modified precision score now becomes:  5/7 = 0.714<br/>.
 Compared to precision, we have seen that the modified precision is a better metric. It can also be computed the same way for any n (bigram, trigram etc). 
 
-# BLEU Algorithm
+## BLEU Algorithm
 BLEU is computed by combining a number of modified n-gram precisions using the formula below:
 
 
-\begin{equation}
+$$BLEU = BP.\exp\left(\sum_{n=1}^{N} w_n \log p_n\right)$$
 
-$BLEU = BP.\exp\left(\sum_{n=1}^{N} w_n \log p_n\right)$
+Where $p_n$ is the modified precision for $n$gram, $w_n$ is the weight between 0 and 1 for $log p_n$ and $\sum_{n=1}^{N} w_n = 1$. The average logarithm with uniform weights is used because their experiments show that the modified n-gram precision decays exponentially with $n$: The unigram precision is much larger than modified bigram precision which is also larger than the modified trigram precision. BP is the **brevity penalty** which is used to penalize short machine translations. The BP is said to be 1 when the candidate length is the same as any reference translation length
 
-\end{equation}
+
+$$\usepackage{amsmath}
+	
+	\begin{equation}
+	BP=\begin{cases}
+	1, & \text{if $c >r$}.\\
+	exp(1-\frac{r}{c}), & \text{if $c<=r$}.
+	\end{cases}
+	\end{equation}$$
+
 
 
 
