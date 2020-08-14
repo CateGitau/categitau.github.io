@@ -25,7 +25,7 @@ author_profile: true
 ![markus-winkler-unsplash](/images/projects/sentiment-analysis.jpg){:class="img-shadow"}
 </td>
 <td markdown="1">
-**[https://github.com/CateGitau](Twitter Sentiment Analysis using Streamlit)**
+**[Twitter Sentiment Analysis using Streamlit](https://github.com/CateGitau)**
 - Details of the project:
 </td> 
 </tr>
@@ -42,7 +42,7 @@ author_profile: true
 ![justin-lane-unsplash](/images/projects/justin-lane-unsplash.jpg){:class="img-shadow"}
 </td>
 <td markdown="1">
-**[https://github.com/CateGitau/Swahili-Speech](Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.)**
+**[Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.](https://github.com/CateGitau/Swahili-Speech)**
 - Approximately 2 hours of audio recordings from a native yoruba speaker.
 - Can be used for low-resource speech tasks 
 
