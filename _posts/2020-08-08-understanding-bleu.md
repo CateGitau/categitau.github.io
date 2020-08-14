@@ -110,8 +110,8 @@ $$
 	
 	\begin{equation}
 	BP=\begin{cases}
-	1, & \text{if $ MT_output_length > reference_output_length$}.\\
-	exp(1-\frac{MT_output_length}{reference_output_length}), & \text{otherwise}.
+	1, & \text{if $ c > r$}.\\
+	exp(1-\frac{c}{r}), & \text{otherwise}.
 	\end{cases}
 	\end{equation}$$
 
