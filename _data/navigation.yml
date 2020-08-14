@@ -1,16 +1,16 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
-
-  - title: "Paper Notes"
-    url: /paper-notes/   
-    
-  - title: "Projects"
-    url: /portfolio/
-        
   - title: "Blog Posts"
     url: /year-archive/
+
+  - title: "Paper Notes"
+    url: /paper-notes/
+ 
+  - title: "Projects"
+    url: /portfolio/
+
+  - title: "Publications"
+    url: /publications/
     
   - title: "CV"
     url: /cv/
