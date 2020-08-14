@@ -24,11 +24,9 @@ author_profile: true
 <td markdown="1">
 ![markus-winkler-unsplash](/images/projects/sentiment-analysis.jpg){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[https://github.com/CateGitau](Twitter Sentiment Analysis using Streamlit)**
 - Details of the project:
-
 </td> 
 </tr>
 </table>
