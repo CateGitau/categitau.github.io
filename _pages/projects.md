@@ -145,7 +145,7 @@ author_profile: true
 <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![matt-botsford-unsplash](/images/projects/dog-cat.jpg){:class="img-shadow"}
+![matt-botsford-unsplash](/images/projects/dog_cat.jpg){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
