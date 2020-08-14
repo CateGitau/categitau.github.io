@@ -26,8 +26,8 @@ author_profile: true
 </td>
 <td></td>
 <td markdown="1">
-**Twitter Sentiment Analysis using Streamlit**
-- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+**[https://github.com/CateGitau](Twitter Sentiment Analysis using Streamlit)**
+- Details of the project:
 
 </td> 
 </tr>
@@ -45,10 +45,9 @@ author_profile: true
 </td>
 <td></td>
 <td markdown="1">
-**Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.**
+**[https://github.com/CateGitau/Swahili-Speech](Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.)**
 - Approximately 2 hours of audio recordings from a native yoruba speaker.
-- Can be used for low-resource speech tasks
-- Details of the project can be found on my [github repo](https://github.com/CateGitau/Swahili-Speech)
+- Can be used for low-resource speech tasks 
 
 </td>
 </tr>
@@ -68,8 +67,8 @@ author_profile: true
 </td>
 <td></td>
 <td markdown="1">
-**Speech Bla Bla Bla**
-- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+**[Speech Bla Bla Bla](https://github.com/CateGitau)**
+- Details of the project: 
 
 </td> 
 </tr>
@@ -88,8 +87,8 @@ author_profile: true
 </td>
 <td></td>
 <td markdown="1">
-**Cassava classification**
-- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+**[Cassava classification](https://github.com/CateGitau)**
+- Details of the project: 
 
 </td> 
 </tr>
@@ -109,9 +108,8 @@ author_profile: true
 </td>
 <td></td>
 <td markdown="1">
-**DNA sequence classification using Kernel Methods**
-- Details of the project can be found on my [github repo](https://github.com/CateGitau)
-
+**[DNA sequence classification using Kernel Methods](https://github.com/CateGitau)**
+- Details of the project: 
 </td> 
 </tr>
 </table>
@@ -130,7 +128,7 @@ author_profile: true
 <td></td>
 <td markdown="1">
 **[Predicting Female-Headed Households in South Africa](https://zindi.africa/competitions/womxn-in-big-data-south-africa-female-headed-households-in-south-africa)**
-- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+- Details of the project:
 
 </td> 
 </tr>
@@ -149,8 +147,8 @@ author_profile: true
 </td>
 <td></td>
 <td markdown="1">
-**Dog Cat Classifier**
-- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+**[Dog Cat Classifier](https://github.com/CateGitau)**
+- Details of the project: 
 
 </td> 
 </tr>
@@ -169,9 +167,8 @@ author_profile: true
 </td>
 <td></td>
 <td markdown="1">
-**Realtime visualization using Shiny**
-- Details of the project can be found on my [github repo](https://github.com/CateGitau)
-
+**[Realtime visualization using Shiny](https://github.com/CateGitau)**
+- Details of the project:
 </td> 
 </tr>
 </table>
