@@ -18,17 +18,37 @@ author_profile: true
 <col width="10">
 <col >
 
+
 <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![yoruba face](/images/project/yor_face.jpeg){:class="img-shadow"}
+![markus-winkler-unsplash](/images/projects/sentiment-analysis.jpg){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
-**Yoruba Speech Dataset: A dataset for low-resource speech tasks.**
-- 3 hours of audio recordings from a native yoruba speaker.
+**Twitter Sentiment Analysis using Streamlit**
+- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+
+</td> 
+</tr>
+</table>
+
+<table style="width:100%">
+<col width="20%">
+<col width="10">
+<col >
+
+<tr height="25"/>
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![justin-lane-unsplash](/images/projects/justin-lane-unsplash.jpg){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+**Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.**
+- Approximately 2 hours of audio recordings from a native yoruba speaker.
 - Can be used for low-resource speech tasks
-- Details of the project can be found on my [github repo](https://github.com/ogunlao/yoruba_speech_project)
+- Details of the project can be found on my [github repo](https://github.com/CateGitau/Swahili-Speech)
 
 </td>
 </tr>
@@ -44,15 +64,115 @@ author_profile: true
 <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
-![yoruba face](/images/project/yor_face.jpeg){:class="img-shadow"}
+![matt-botsford-unsplash](/images/projects/matt-botsford-unsplash.jpg){:class="img-shadow"}
 </td>
 <td></td>
 <td markdown="1">
-**Comparing Yoruba and French Speech Speech Models in Low-Resource Settings**
-- CPC models is trained on 1 hour of yoruba and french audio with labels
-- Pretrained CPC model from Facebook CPC_audio library is then finetuned on 1hr of data.
-- Details of the project can be found on my [github repo](https://github.com/ogunlao/yoruba_speech_project/tree/master/project)
+**Speech Bla Bla Bla**
+- Details of the project can be found on my [github repo](https://github.com/CateGitau)
 
 </td> 
 </tr>
 </table>
+
+<table style="width:100%">
+<col width="20%">
+<col width="10">
+<col >
+
+
+<tr height="25"/>
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![cassava leaves](/images/projects/cassava.jpg){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+**Cassava classification**
+- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+
+</td> 
+</tr>
+</table>
+
+
+<table style="width:100%">
+<col width="20%">
+<col width="10">
+<col >
+
+
+<tr height="25"/>
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![DNA](/images/projects/DNA.jpg){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+**DNA sequence classification using Kernel Methods**
+- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+
+</td> 
+</tr>
+</table>
+
+<table style="width:100%">
+<col width="20%">
+<col width="10">
+<col >
+
+
+<tr height="25"/>
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![Zindi logo](/images/projects/zindi.png){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+**[Predicting Female-Headed Households in South Africa](https://zindi.africa/competitions/womxn-in-big-data-south-africa-female-headed-households-in-south-africa)**
+- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+
+</td> 
+</tr>
+</table>
+
+<table style="width:100%">
+<col width="20%">
+<col width="10">
+<col >
+
+
+<tr height="25"/>
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![matt-botsford-unsplash](/images/projects/dog-cat.jpg){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+**Dog Cat Classifier**
+- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+
+</td> 
+</tr>
+</table>
+
+<table style="width:100%">
+<col width="20%">
+<col width="10">
+<col >
+
+
+<tr height="25"/>
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![markus-winkler-unsplash](/images/projects/markus-winkler-unsplash.jpg){:class="img-shadow"}
+</td>
+<td></td>
+<td markdown="1">
+**Realtime visualization using Shiny**
+- Details of the project can be found on my [github repo](https://github.com/CateGitau)
+
+</td> 
+</tr>
+</table>
+
