@@ -41,7 +41,6 @@ author_profile: true
 <td markdown="1">
 ![justin-lane-unsplash](/images/projects/justin-lane-unsplash.jpg){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[https://github.com/CateGitau/Swahili-Speech](Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.)**
 - Approximately 2 hours of audio recordings from a native yoruba speaker.
@@ -63,7 +62,6 @@ author_profile: true
 <td markdown="1">
 ![matt-botsford-unsplash](/images/projects/matt-botsford-unsplash.jpg){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[Speech Bla Bla Bla](https://github.com/CateGitau)**
 - Details of the project: 
@@ -83,7 +81,6 @@ author_profile: true
 <td markdown="1">
 ![cassava leaves](/images/projects/cassava.jpg){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[Cassava classification](https://github.com/CateGitau)**
 - Details of the project: 
@@ -104,7 +101,6 @@ author_profile: true
 <td markdown="1">
 ![DNA](/images/projects/DNA.jpg){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[DNA sequence classification using Kernel Methods](https://github.com/CateGitau)**
 - Details of the project: 
@@ -123,7 +119,6 @@ author_profile: true
 <td markdown="1">
 ![Zindi logo](/images/projects/zindi.png){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[Predicting Female-Headed Households in South Africa](https://zindi.africa/competitions/womxn-in-big-data-south-africa-female-headed-households-in-south-africa)**
 - Details of the project:
@@ -143,7 +138,6 @@ author_profile: true
 <td markdown="1">
 ![matt-botsford-unsplash](/images/projects/dog_cat.jpg){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[Dog Cat Classifier](https://github.com/CateGitau)**
 - Details of the project: 
@@ -163,7 +157,6 @@ author_profile: true
 <td markdown="1">
 ![markus-winkler-unsplash](/images/projects/markus-winkler-unsplash.jpg){:class="img-shadow"}
 </td>
-<td></td>
 <td markdown="1">
 **[Realtime visualization using Shiny](https://github.com/CateGitau)**
 - Details of the project:
