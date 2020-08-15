@@ -206,7 +206,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      comments: true
+      comments: false
       share: true
   # _pages
   - scope:

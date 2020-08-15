@@ -1,6 +1,7 @@
 ---
 title: "Unsupervised Machine Translation"
 collection: paper-notes
+date: 2020-08-15
 permalink: /paper-notes/Unsupervised-machine-translation
 ---
 
