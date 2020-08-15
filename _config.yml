@@ -194,7 +194,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       read_time: true
       comments: true
       share: true
@@ -205,7 +205,7 @@ defaults:
       type: paper-notes
     values:
       layout: single
-      author_profile: false
+      author_profile: true
       comments: true
       share: true
   # _pages
