@@ -5,7 +5,7 @@ date: 2020-08-15
 permalink: /paper-notes/2020-generalized-data-augmentation
 ---
 
-In this paper, they examin how to better share information between related low-resource language (LRL) and high-resource language (HRL).
+[Generalized Data Augmentation for Low Resource Translation](https://arxiv.org/abs/1906.03785) - In this paper, they examin how to better share information between related low-resource language (LRL) and high-resource language (HRL).
 
 **Problem** - Translation to or from low resource languages poses challenges for machine translation in terms of data adequacy and fluency.
 
