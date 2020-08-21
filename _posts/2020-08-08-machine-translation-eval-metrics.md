@@ -185,7 +185,7 @@ This is the latest evaluation metric for machine translation that is said to yei
 **LEPOR** focuses on combining two modified factor(sentence length penalty, n-gram position difference penalty) and two classic methodologies(precision and recall). 
 
 LEPOR is calculated as follows:
-$$LEPOR = LP x NPosPenal x Harmonic(\alpha R, \beta P)$$
+$$LEPOR = LP \text{x} NPosPenal \text{x} Harmonic(\alpha R, \beta P)$$
 
 We'll look at the features below.
 
@@ -199,7 +199,7 @@ $$
 	
 	\begin{equation}
 	LP=\begin{cases}
-	exp^{(1-\frac{c}{r})} & \text{if $c< r$}\\
+	exp^{(1-\frac{c}{r})}, & \text{if $c< r$}\\
 	1, & \text{if $ c = r$}.\\
 	exp^{(1-\frac{c}{r})}, & \text{if $c> r$}.
 	\end{cases}
@@ -236,7 +236,7 @@ After calculating $NPD$, the values of $NPosPenal$ can be calculated
 From the Lepor fomular that was hsown above $Harmonic(\alpha R, \beta P)$ means the Harmonic mean of $\alpha R$ and $\beta P$. 
 $\alpha$ and $\beta$ are two parameters which were designed to adjust the weight of R (recall) and P(precision). Precision and recall are calculated as:
 
-$$P = \frac{common\_num}{system\_length}$$
+$$P = \frac{common\_num}{system\_length}$$</br>
 $$R = \frac{common\_num}{reference\_length}$$
 
 *common_num* represents the number of aligned(matching) words and marks appearing both in translations and references, *system_length* and reference_length** specify the sentence length of the system output and reference respectively.
