@@ -108,7 +108,7 @@ $$
 	\begin{equation}
 	BP=\begin{cases}
 	1, & \text{if $ c > r$}.\\
-	exp(1-\frac{c}{r}), & \text{otherwise}.
+	exp^{(1-\frac{c}{r})}, & \text{otherwise}.
 	\end{cases}
 	\end{equation}$$
 
@@ -166,7 +166,7 @@ $$F_{mean} = \frac{10PR}{R + 9P}$$
 
 so far METOR is based on unigram matches, to take into account longer n-gram matches, METEOR computes a penalty for a given alignment. The penalty is computed as follows:
 
-$$ Penalty = 0.5 * \left(\frac{\text{#chunks}}{\text{#unigrams/_matched}}\right)$$
+$$ Penalty = 0.5 * \left(\frac{chunks}{unigrams\_matched}\right)$$
 
 The unigrams are grouped into the fewest possible chunks where a chunk is defined as a set of unigrams that are adjacent in the candidate and in the reference. The longer the adjascent mappings between the candidate and the reference, the fewer chunks there are. A translation that is identical to the reference will give just one chunk.
 
@@ -199,9 +199,9 @@ $$
 	
 	\begin{equation}
 	LP=\begin{cases}
-	exp(1-\frac{c}{r} & \text{if $c< r$}\\
+	exp^{(1-\frac{c}{r})} & \text{if $c< r$}\\
 	1, & \text{if $ c = r$}.\\
-	exp(1-\frac{c}{r}), & \text{if &c>&r}.
+	exp^{(1-\frac{c}{r})}, & \text{if $c> r$}.
 	\end{cases}
 	\end{equation}$$
 
@@ -236,8 +236,8 @@ After calculating $NPD$, the values of $NPosPenal$ can be calculated
 From the Lepor fomular that was hsown above $Harmonic(\alpha R, \beta P)$ means the Harmonic mean of $\alpha R$ and $\beta P$. 
 $\alpha$ and $\beta$ are two parameters which were designed to adjust the weight of R (recall) and P(precision). Precision and recall are calculated as:
 
-$$P = \frac{common\_num}{system_length}$$
-$$R = \frac{common\_num}{reference_length}$$
+$$P = \frac{common\_num}{system\_length}$$
+$$R = \frac{common\_num}{reference\_length}$$
 
 *common_num* represents the number of aligned(matching) words and marks appearing both in translations and references, *system_length* and reference_length** specify the sentence length of the system output and reference respectively.
 
