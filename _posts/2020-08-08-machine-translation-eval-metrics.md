@@ -3,7 +3,7 @@ title: Machine Translation Evaluation Metrics
 author: categitau
 comments: true
 date: 2020-08-08 15:50:24+00:00
-permalink: /posts/2020/08/understanding-bleu
+permalink: /posts/2020/08/machine-translation-eval-metrics
 
 tags:
 - Machine Translation
@@ -182,6 +182,76 @@ The algorithm first creates an alignment between two sentences which are the can
 
 
 # LEPOR
+
+This is the latest evaluation metric for machine translation that is said to yeild the state-of-the-art correlation with human judgements compared with the other classic metrics.
+
+**LEPOR** focuses on combining two modified factor(sentence length penalty, n-gram position difference penalty) and two classic methodologies(precision and recall). 
+
+LEPOR is calculated as follows:
+$$LEPOR = LP x NPosPenal x Harmonic(\alpha R, \beta P)$$
+
+We'll look at the features below.
+
+## Design of the LEPOR metric
+
+### Length penalty
+
+In the above equation, $LP$ means Length Penalty, which is used to penalize for both longer and shorter system outputs compared with the reference translations unlike BLEAU which only penalizes for shorter translations. It's calculated as:
+
+$$
+	
+	\begin{equation}
+	LP=\begin{cases}
+	exp(1-\frac{c}{r} & \text{if $c< r$}\\
+	1, & \text{if $ c = r$}.\\
+	exp(1-\frac{c}{r}), & \text{if &c>&r}.
+	\end{cases}
+	\end{equation}$$
+
+This means that when the output length $c$ of sentence is equal to that of the reference $r$, LP will be 1 meaning no penalty. However when the output length $c$ is larger or smaller than that of the reference one, LP will be less than 1 which means a penalty on the evaluation value of LEPOR.
+
+### N-gram position difference penalty
+
+The $NPosPenal$ is defined as:
+
+$$NPosPenal = e^{-NPD}$$
+
+**NPD** means n-gram position difference penalty. $NPosPenal$ is designed to compare words order in the sentences between the reference translation and the output translation. NPD is defined as:
+
+$$NPD = \frac{1}{Length_{output}}\sum_{i=1}^{Length_{output}}|PD_i|$$
+
+where $Length_{output}$ represents the length of system output sentence and $PD_i$ means the n-gram position D-value(difference value) of aligned words between output and reference sentences. Every word from both output translation and reference should be aligned only once. Let's look at an example below.
+
+![Image of Yaktocat](/images/blogs/lepor_1.png)
+
+The example below shows the alignment of an output translation and a reference translation which we shall use to calculate $NPD$. A Context-dependent n-gram word alignment algorithm is used which you can find in the paper [here](https://www.aclweb.org/anthology/C12-2044.pdf). The second step after alignment is calculating NDP. Start by labeling each word with its position number divided by the corresponding sentence length for normalization as shown below.
+
+![Image of Yaktocat](/images/blogs/lepor_2.png)
+
+We then use the $NPD$ formular from above for calculation where we first take 1 divided by the length of the output sentence then that is multiplied by the sum of the n-gram position difference of each word which is the position of the reference translation subtracted from the output translation.
+
+![Image of Yaktocat](/images/blogs/lepor_3.png)
+
+After calculating $NPD$, the values of $NPosPenal$ can be calculated
+
+## Precision and recall
+
+From the Lepor fomular that was hsown above $Harmonic(\alpha R, \beta P)$ means the Harmonic mean of $\alpha R$ and $\beta P$. 
+$\alpha$ and $\beta$ are two parameters which were designed to adjust the weight of R (recall) and P(precision). Precision and recall are calculated as:
+
+$$P = \frac{common\_num}{system_length}$$
+$$R = \frac{common\_num}{reference_length}$$
+
+*common_num* represents the number of aligned(matching) words and marks appearing both in translations and references, *system_length* and reference_length** specify the sentence length of the system output and reference respectively.
+
+After getting all the variables in the LEPOR equation, we can now calculate the final LEPOR score and higher LEPOR value means the output sentence is closer to the references
+
+
+
+# Conclusion
+
+
+
 
 
 
