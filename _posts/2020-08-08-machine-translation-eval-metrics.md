@@ -50,9 +50,9 @@ The intuition behind the BLEU score is that a good translation shares many words
 
 
 ## Standard n-gram precision
-BLEU metric is based on the presison metric. Precision is computed by counting up the number of Machine translated words(n-grams) that occur in any reference translation and divide that by the total number of words in the candidate translation.
+BLEU metric is based on the presison metric. Precision is computed by counting up the number of machine translated words(n-grams) that occur in any reference translation and divide that by the total number of words in the candidate translation.
 
-Using the example above, calcualting the unigram precision of *MT output 1*, we would count the number of unigrams in *MT Output 1* that appear in any of the reference sentences then divide that total count with the total number of words in the Machine translated sentence as shown below:
+Using the example above, calcualting the unigram precision of *MT output 1*, we would count the number of unigrams in *MT Output 1* that appear in any of the reference sentences then divide that total count with the total number of words in the machine translated sentence as shown below:
 
 | unigram  |  shown in refrence? |
 |---|---|
@@ -65,15 +65,12 @@ Using the example above, calcualting the unigram precision of *MT output 1*, we 
 | mat |   1|
 | **Total**| **7** |
 
-Therefore, unigram precision = 7/7<br/>
-                             = 1.0
-If you do the same to *MT Output 2*: You will get a unigram precision of 8/8 = 1.0
+Therefore, unigram precision = **7/7** = **1.0**<br/>
+If you do the same to *MT Output 2*, you will get a unigram precision of **8/8** = **1.0**
 
 As you can see from the results of *MT Output 2*, this is not a good measure because it says the MT Output has high precision, but that's not the case.
 
-The problem with this method is that a reference word should be considered exhaustive after matching machine translated words that are identified. This is to mean that if there are only a maximum of two "the" words in the reference words, those are the only counts that should be considered. 
-
-With that in mind, they proposed a **modified precision** method.
+To deal with this problem, they proposed a **modified precision** method.
 
 ## Modified n-gram precision
 
@@ -136,7 +133,7 @@ METEOR attempts to address several weaknesses that have been observed in BLEU su
 ## METEOR metric
 METEOR evaluates a translation by computing a score based on explicit word-to-word matches between the translation and a reference trasnlation. If more than one reference translation is available, the given translation is scored against each reference independently and the best score is reported.The alignment is a set mappings between a unigram in one string and a unigram in another string. Every unigram in the candidate translation must map to zero or one but not more than one unigram in the reference.
 
-# give example of an alignement
+![alignment example](/image/blog/meteor.png)
 
 If there are two alignments with the same number of mappings, the alignment is chosen with the fewest crosses, that is, with fewer intersections of two mappings. From the two alignments shown, alignment (a) would be selected at this point.
 
@@ -169,7 +166,7 @@ $$F_{mean} = \frac{10PR}{R + 9P}$$
 
 so far METOR is based on unigram matches, to take into account longer n-gram matches, METEOR computes a penalty for a given alignment. The penalty is computed as follows:
 
-$$ Penalty = 0.5 * \left(\frac{\text{#chunks}}{\text{#unigrams\_matched}}\right)$$
+$$ Penalty = 0.5 * \left(\frac{\text{#chunks}}{\text{#unigrams/_matched}}\right)$$
 
 The unigrams are grouped into the fewest possible chunks where a chunk is defined as a set of unigrams that are adjacent in the candidate and in the reference. The longer the adjascent mappings between the candidate and the reference, the fewer chunks there are. A translation that is identical to the reference will give just one chunk.
 
