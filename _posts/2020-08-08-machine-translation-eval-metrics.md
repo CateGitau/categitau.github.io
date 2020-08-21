@@ -90,9 +90,7 @@ Using our example from above, we would now end up with the table shown:
 | mat  |  1 |  1 |
 | **Total**  |  **5** | **7**  |
 
-Therefore our modified precision score now becomes:  5/7 = 0.714<br/>.
-This is calculated as:
-
+Therefore our modified precision score now becomes:  **5/7** = **0.714**<br/>.
 Compared to precision, we have seen that the modified precision is a better metric. It can also be computed the same way for any $n$ (bigram, trigram etc). 
 
 ## BLEU Algorithm
@@ -123,17 +121,17 @@ METEOR is based on generalized concept of unigram matching between the machine t
 
 Once this generalized unigram matches between the two strings have been found, METEOR computes a score for this matching using a combination of unigram-precision, unigram-recall and a measure of how out-of-order the words of the MT output are with respect to the reference. 
 
-METEOR attempts to address several weaknesses that have been observed in BLEU such as:
-**The lack of recall** - BLEU does not explicitly use recall but instead uses the Brevity Penalty. This, they believe does not adequately compensate for the lack of recall.
-**Use of Higher Order N-grams** - BLEU uses higher order N-grams as an indirect measure of how well the translation is formed gramatically. They believe that checking the word order to measure level of grammaticality is a better account for the importance of grammaticality as a factor in the MT metric and result in better correlation with human judgements of translation quality.
-**Lack of Explicit Word-matching Between Translation and Reference** - 
-**Use of Geometric Averaging of N-grams**- BLEU uses geometric averaging of n-grams which results in a score of zero whenever one component n-gram scores is zero
+METEOR attempts to address several weaknesses that have been observed in BLEU such as: <br/>
+**The lack of recall** - BLEU does not explicitly use recall but instead uses the Brevity Penalty. This, they believe does not adequately compensate for the lack of recall.<br/>
+**Use of Higher Order N-grams** - BLEU uses higher order N-grams as an indirect measure of how well the translation is formed gramatically. They believe that checking the word order to measure level of grammaticality is a better account for the importance of grammaticality as a factor in the MT metric and result in better correlation with human judgements of translation quality.<br/>
+**Lack of Explicit Word-matching Between Translation and Reference** - <br/>
+**Use of Geometric Averaging of N-grams**- BLEU uses geometric averaging of n-grams which results in a score of zero whenever one component n-gram scores is zero<br/>
 
 
 ## METEOR metric
 METEOR evaluates a translation by computing a score based on explicit word-to-word matches between the translation and a reference trasnlation. If more than one reference translation is available, the given translation is scored against each reference independently and the best score is reported.The alignment is a set mappings between a unigram in one string and a unigram in another string. Every unigram in the candidate translation must map to zero or one but not more than one unigram in the reference.
 
-![alignment example](/image/blog/meteor.png)
+![Image of alignment](/images/blogs/meteor.png)
 
 If there are two alignments with the same number of mappings, the alignment is chosen with the fewest crosses, that is, with fewer intersections of two mappings. From the two alignments shown, alignment (a) would be selected at this point.
 
@@ -236,7 +234,7 @@ After calculating $NPD$, the values of $NPosPenal$ can be calculated
 From the Lepor fomular that was hsown above $Harmonic(\alpha R, \beta P)$ means the Harmonic mean of $\alpha R$ and $\beta P$. 
 $\alpha$ and $\beta$ are two parameters which were designed to adjust the weight of R (recall) and P(precision). Precision and recall are calculated as:
 
-$$P = \frac{common\_num}{system\_length}$$</br>
+$$P = \frac{common\_num}{system\_length}$$ <br/>
 $$R = \frac{common\_num}{reference\_length}$$
 
 *common_num* represents the number of aligned(matching) words and marks appearing both in translations and references, *system_length* and reference_length** specify the sentence length of the system output and reference respectively.
