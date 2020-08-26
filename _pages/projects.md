@@ -25,8 +25,9 @@ author_profile: true
 ![markus-winkler-unsplash](/images/projects/sentiment-analysis.jpg){:class="img-shadow"}
 </td>
 <td markdown="1">
-**[Twitter Sentiment Analysis using Streamlit](https://github.com/CateGitau)**
-- Details of the project:
+**[Twitter Sentiment Analysis using Streamlit](https://github.com/CateGitau/NLP_Projects/tree/master/twitter_sentiment)**
+- Details of the project:<br/>
+ - This is a work-in progress sentiment analysis app that's built using [Streamlit](https://www.streamlit.io/)
 </td> 
 </tr>
 </table>
@@ -43,8 +44,9 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.](https://github.com/CateGitau/Swahili-Speech)**
-- Approximately 2 hours of audio recordings from a native yoruba speaker.
-- Can be used for low-resource speech tasks 
+- Details of the project:<br/>
+    - Approximately 2 hours of audio recordings from a native yoruba speaker.<br/>
+    - Can be used for low-resource speech tasks 
 
 </td>
 </tr>
@@ -55,26 +57,6 @@ author_profile: true
 <col width="20%">
 <col width="10">
 <col >
-
-
-<tr height="25"/>
-<tr style="border-bottom:1pt solid #eee" >
-<td markdown="1">
-![matt-botsford-unsplash](/images/projects/matt-botsford-unsplash.jpg){:class="img-shadow"}
-</td>
-<td markdown="1">
-**[Speech Bla Bla Bla](https://github.com/CateGitau)**
-- Details of the project: 
-
-</td> 
-</tr>
-</table>
-
-<table style="width:100%">
-<col width="20%">
-<col width="10">
-<col >
-
 
 <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
@@ -121,7 +103,8 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Predicting Female-Headed Households in South Africa](https://zindi.africa/competitions/womxn-in-big-data-south-africa-female-headed-households-in-south-africa)**
-- Details of the project:
+- Details of the project:<br/>
+ - You can find notebooks used [here](https://github.com/CateGitau/Zindi_Challenge)
 
 </td> 
 </tr>
@@ -139,20 +122,21 @@ author_profile: true
 ![matt-botsford-unsplash](/images/projects/dog_cat.jpg){:class="img-shadow"}
 </td>
 <td markdown="1">
-**[Dog Cat Classifier](https://github.com/CateGitau)**
-- Details of the project: 
+**[Dog Cat Classifier](https://github.com/CateGitau/cat_dog_cnn)**
+- Details of the project:<br/>
+ - This project classifies images into either a cat or a dog using convolutional neural networks in Pytorch
 
 </td> 
 </tr>
 </table>
 
-<table style="width:100%">
+<!-- <table style="width:100%">
 <col width="20%">
 <col width="10">
-<col >
+<col > -->
 
 
-<tr height="25"/>
+<!-- <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![markus-winkler-unsplash](/images/projects/markus-winkler-unsplash.jpg){:class="img-shadow"}
@@ -162,5 +146,5 @@ author_profile: true
 - Details of the project:
 </td> 
 </tr>
-</table>
+</table> -->
 
