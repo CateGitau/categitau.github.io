@@ -25,8 +25,8 @@ author_profile: true
 ![messages](/images/projects/screener.jpeg){:class="img-shadow"}
 </td>
 <td markdown="1">
-**Message Screener](https://github.com/CateGitau/Message_Screener)**
-- This project was part of the Data Science Intensive training program where our team built a message screener that's able to detect profane words and blacklisting them, sentiment and identify topics in the text. 
+**[Message Screener](https://github.com/CateGitau/Message_Screener)**
+- This project was part of the [Data Science Intensive](http://dsi-program.com/) program where our team built a message screener that's able to detect profane words and blacklisting them, getting sentiment and identify topics in the text. 
 - You can find the deployed product [here]( https://share.streamlit.io/malcolmrite-dsi/message_screener-1/main/Message_GUI.py)
 </td> 
 </tr>
