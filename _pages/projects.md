@@ -45,7 +45,7 @@ author_profile: true
 <td markdown="1">
 **[Rock Classifier](https://github.com/CateGitau/Rock-Classifier)**
  -  This is an image classification project to classify rocks into different classes. No labels were provided, semi-supervised technique known as fixmatch was used.
- 
+
 </td> 
 </tr>
 </table>
@@ -82,7 +82,7 @@ author_profile: true
 <td markdown="1">
 **[Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.](https://github.com/CateGitau/Swahili-Speech)**
 - Details of the project:<br/>
-    - Approximately 2 hours of audio recordings from a native yoruba speaker.<br/>
+    - Approximately 2 hours of audio recordings from a native Swahili speaker.<br/>
     - Can be used for low-resource speech tasks 
 
 </td>
@@ -95,7 +95,7 @@ author_profile: true
 <col width="10">
 <col >
 
-<tr height="25"/>
+<!-- <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![cassava leaves](/images/projects/cassava.jpg){:class="img-shadow"}
@@ -130,7 +130,7 @@ author_profile: true
 <table style="width:100%">
 <col width="20%">
 <col width="10">
-<col >
+<col > -->
 
 
 <tr height="25"/>
@@ -153,7 +153,7 @@ author_profile: true
 <col >
 
 
-<tr height="25"/>
+<!-- <tr height="25"/>
 <tr style="border-bottom:1pt solid #eee" >
 <td markdown="1">
 ![matt-botsford-unsplash](/images/projects/dog_cat.jpg){:class="img-shadow"}
@@ -165,7 +165,7 @@ author_profile: true
 
 </td> 
 </tr>
-</table>
+</table> -->
 
 <!-- <table style="width:100%">
 <col width="20%">
