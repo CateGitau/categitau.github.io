@@ -26,8 +26,26 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Message Screener](https://github.com/CateGitau/Message_Screener)**
-- This project was part of the [Data Science Intensive](http://dsi-program.com/) program where our team built a message screener that's able to detect profane words and blacklisting them, getting sentiment and identify topics in the text. 
+- This is a message screener that's able to detect profane words and blacklisting them, getting sentiment and identify topics in the text. 
 - You can find the deployed product [here]( https://share.streamlit.io/malcolmrite-dsi/message_screener-1/main/Message_GUI.py)
+</td> 
+</tr>
+</table>
+
+<table style="width:100%">
+<col width="20%">
+<col width="10">
+<col >
+
+<tr height="25"/>
+<tr style="border-bottom:1pt solid #eee" >
+<td markdown="1">
+![rocks](/images/projects/rocks.jpeg){:class="img-shadow"}
+</td>
+<td markdown="1">
+**[Rock Classifier](https://github.com/CateGitau/Rock-Classifier)**
+ -  This is an image classification project to classify rocks into different classes. No labels were provided, semi-supervised technique known as fixmatch was used.
+ 
 </td> 
 </tr>
 </table>
