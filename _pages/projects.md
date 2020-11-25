@@ -47,7 +47,7 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Rock Classifier](https://github.com/CateGitau/Rock-Classifier)**
- -  This is an image classification project to classify rocks into different classes. No labels were provided, semi-supervised technique known as fixmatch was used.
+ -   This project's aim was to train a machine vision classifier that identifies five types of material classes for a large mining company in South Africa to allow automatic monitoring of the input bins for their funace. The image sampling system was already implemented and raw image data that is not classified was available. The purpose of this is to help the organization to reduce the material handling errors which leads to inefficiencies in the furnace and drives up production costs.
 
 </td> 
 </tr>
@@ -66,8 +66,10 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Twitter Sentiment Analysis using Streamlit](https://github.com/CateGitau/NLP_Projects/tree/master/twitter_sentiment)**
-- Details of the project:<br/>
- - This is a work-in progress sentiment analysis app that's built using [Streamlit](https://www.streamlit.io/)
+- This is a work-in progress sentiment analysis app that's built using [Streamlit](https://www.streamlit.io/). The purpose of this app is to be able to get sentiments of tweets that are from twitter. 
+- Improvements: 
+    - getting average sentiment of tweets from a page or specific hashtags
+
 </td> 
 </tr>
 </table>
