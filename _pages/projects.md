@@ -26,7 +26,10 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Message Screener](https://github.com/CateGitau/Message_Screener)**
-- This is a message screener that's able to detect profane words and blacklisting them, getting sentiment and identify topics in the text. 
+- The aim of this project is to create a tool that analyses a user's message before sending it. The project contains the following product features:
+     - Profanity screener (with blacklist)
+     - Sentiment analyser
+     - Topic Identifier
 - You can find the deployed product [here]( https://share.streamlit.io/malcolmrite-dsi/message_screener-1/main/Message_GUI.py)
 </td> 
 </tr>
