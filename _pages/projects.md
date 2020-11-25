@@ -67,7 +67,7 @@ author_profile: true
 <td markdown="1">
 **[Twitter Sentiment Analysis using Streamlit](https://github.com/CateGitau/NLP_Projects/tree/master/twitter_sentiment)**
 - This is a work-in progress sentiment analysis app that's built using [Streamlit](https://www.streamlit.io/). The purpose of this app is to be able to get sentiments of tweets that are from twitter. 
-- Improvements: 
+- Future improvements: 
     - getting average sentiment of tweets from a page or specific hashtags
 
 </td> 
