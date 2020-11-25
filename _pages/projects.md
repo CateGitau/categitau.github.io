@@ -86,9 +86,8 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Swahili speech dataset: A Swahili speech dataset for low-resource speech tasks.](https://github.com/CateGitau/Swahili-Speech)**
-- Details of the project:<br/>
-    - Approximately 2 hours of audio recordings from a native Swahili speaker.<br/>
-    - Can be used for low-resource speech tasks 
+- Approximately 2 hours of audio recordings from a native Swahili speaker.<br/>
+- Can be used for low-resource speech tasks 
 
 </td>
 </tr>
@@ -145,8 +144,8 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Predicting Female-Headed Households in South Africa](https://zindi.africa/competitions/womxn-in-big-data-south-africa-female-headed-households-in-south-africa)**
-- Details of the project:<br/>
- - You can find notebooks used [here](https://github.com/CateGitau/Zindi_Challenge)
+- The objective of this challenge was to build a predictive model that accurately estimates the % of households per ward that are female-headed and living below a particular income threshold. 
+- You can find notebooks used [here](https://github.com/CateGitau/Zindi_Challenge)
 
 </td> 
 </tr>
