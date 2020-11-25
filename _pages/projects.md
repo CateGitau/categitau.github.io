@@ -26,7 +26,7 @@ author_profile: true
 </td>
 <td markdown="1">
 **[Message Screener](https://github.com/CateGitau/Message_Screener)**
-- The aim of this project is to create a tool that analyses a user's message before sending it. The project contains the following product features:
+- The aim of the project is to create a tool that analyses a user's message before sending. This will enable social media users to be more mindful of their posts to avoid unnecessary controvercy by flagging words, tone and topics that might be considered sensitive. The project contains the following product features:
      - Profanity screener (with blacklist)
      - Sentiment analyser
      - Topic Identifier
